@@ -8,9 +8,15 @@ Prachetas Yeri
 
 * What is the focus of your research project?
 
+Build, design and implement a prototype using computer vision and machine learning to help doctors understand patients emotions, and degree of pain to aid in diagnosis of diseases in a virtual consultation.
+
 * State at least one research question that your project will answer.
 
+Can facial expressions be analyzed to draw out emotions to aid in better diagnosis in virtual consultation sessions between medical caregivers and patients?
+
+
 * What are the steps you will need to take to complete this project?
+
 
 ---
 
