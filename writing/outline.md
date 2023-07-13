@@ -2,7 +2,7 @@
 
 ## Name
 
-Add Your Name Here
+Prachetas Yeri
 
 ### Research Project Details
 
