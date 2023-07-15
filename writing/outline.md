@@ -17,26 +17,44 @@ Can facial expressions be analyzed to draw out emotions to aid in better diagnos
 
 * What are the steps you will need to take to complete this project?
 
+PHASE 1:
+
+- Finalize tools and datasets required for the project (Google Colab, python, image dataset, faker.ai, compencv)
+- Conduct exploratory data analysis(Dpendent, independant, missing data, outliers data incostencies)
+- Establish emotion indices on face images from the internet
+- Write code to arrive at approximate emotion states(happy, sad, angry, etc.)
+- Correlate emotions states with pain index
+- Validate model and analyze model performance (accuracy, precision, recall)
+
+PHASE 2:
+- Source Video data
+- Convert video to threaded images
+- Repeat phase 1 analysis on video (accuracy of model, precision, etc)
+
+PHASE 3: (OUt OF SCOPE)
+- Extend the analysis to near real time video sessions (Facetime, Google Meet)
+
 
 ---
 
 ### Outline
 
-* Introduction
+* Introduction 
 
-     + Motivation
+     + MotivationY
 
-     + Current State of the Art
+     + Current State of the Art Y
 
-     + Goals of the Project
+     + Goals of the Project Y
 
-* Related work
+* Related work Y
 
-* Method
+* Method Y
 
 * Experiments
-
-     + Experimental Design
+     + Assumptions Inscope- Out of scope
+     
+     + Modeling Methadology 
 
      + Evaluation
 
@@ -49,6 +67,7 @@ Can facial expressions be analyzed to draw out emotions to aid in better diagnos
      + Future Work
 
      + Ethical Implications and Recommendations
+          - Patient has not given permission (HIPA rules)
 
      + Conclusions
 
