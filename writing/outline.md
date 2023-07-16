@@ -20,9 +20,9 @@ Can facial expressions be analyzed to draw out emotions to aid in better diagnos
 PHASE 1:
 
 - Finalize tools and datasets required for the project (Google Colab, python, image dataset, faker.ai, compencv)
-- Conduct exploratory data analysis(Dpendent, independant, missing data, outliers data incostencies)
+- Conduct exploratory data analysis(Dependent, independent, missing data, outliers data inconsisencies)
 - Establish emotion indices on face images from the internet
-- Write code to arrive at approximate emotion states(happy, sad, angry, etc.)
+- Write code to arrive at approximate emotion states(happy, sad, angry, pained, neutral, etc.)
 - Correlate emotions states with pain index
 - Validate model and analyze model performance (accuracy, precision, recall)
 
@@ -31,9 +31,9 @@ PHASE 2:
 - Convert video to threaded images
 - Repeat phase 1 analysis on video (accuracy of model, precision, etc)
 
-PHASE 3: (OUt OF SCOPE)
-- Extend the analysis to near real time video sessions (Facetime, Google Meet)
-
+PHASE 3: 
+- Display model performance as graphs or visual comparison
+- Write the paper
 
 ---
 
@@ -41,19 +41,34 @@ PHASE 3: (OUt OF SCOPE)
 
 * Introduction 
 
-     + MotivationY
+     + Motivation 
+     - During covid times, my grandpa was admitted into the hospital and would not be treated fully until his covid test came back negative. 
+     - Made me wonder if his treatment could be done online and diagnosis of the disease could aid in better medical care
+     - This could also help people financially challenged, being able to talk to a doctor virtually for less money
+     - During covid times we didnt want to take my grandpa to the hospital frequently to reduce risk of being exposed to COVID-19
+     - Helps conectivity between a doctor patient (primary doctor/doctor the patient is used to)
+     - Increases the availability of doctors so the ratio of doctors to patients increases
 
-     + Current State of the Art Y
+     + Current State of the Art 
+     - Till now emotion detection has been used in several other fields
+     - One paper talks about emotion recognition and facial detection to identify sleepy drivers
+     - Emotion detection has been used to identify crime or fraud
+     - Emotion detection in robotics, etc
+     - Can this be used in virual medical diagnosis'?
 
-     + Goals of the Project Y
+     + Goals of the Project 
+     - To see if emotion detection is feasible in order to aid in diagnosis of patients in a virtual interaction
 
-* Related work Y
+* Related work 
 
-* Method Y
+* Method 
 
 * Experiments
-     + Assumptions Inscope- Out of scope
-     
+     + Assumptions
+     - Patients have decent to good internet connection for the algorithm to run
+     - Patients have a working camera
+     - Lighting is manageable
+
      + Modeling Methadology 
 
      + Evaluation
@@ -65,6 +80,7 @@ PHASE 3: (OUt OF SCOPE)
      + Summary of Results
 
      + Future Work
+     - Extend the analysis to near real time video sessions (Facetime, Google Meet)
 
      + Ethical Implications and Recommendations
           - Patient has not given permission (HIPA rules)
