@@ -2,7 +2,7 @@
 
 ## Name
 
-Add Your Name Here
+Prachetas Yeri
 
 ---
 
@@ -17,9 +17,15 @@ It is often useful and necessary to separate the introduction into multiple sect
 The headings below propose one way you might structure this section of the document.
 
 #### Motivation
+During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Leukemia. He was in a weakened state of health. Coronavirus exposure would have been undesirable to his health. I wondered if we could engage in online consultations with his doctors. Although possible, I quickly understood that online sessions would not be an adequate method compared to face-to-face interactions. I speculated ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the public would benefit:
 
-TODO
+1. Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
+2. Availability of medical services would be heightened and would benefit patients without easy access to good medical services. They would be able to reach a qualified doctor and get treated remotely.
+
+3. Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
+
+4. According to Infoplease as of August 4, 2020, there were only 2 physicians per 100,000 people in Tanzania whereas in Cuba there were 591 physicians per 100,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
 #### Current State of the Art
 
 TODO
