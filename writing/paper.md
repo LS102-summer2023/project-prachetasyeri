@@ -21,7 +21,7 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
 
 1. Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
-2. Availability of medical services would be heightened and would benefit patients without easy access to good medical services. They would be able to reach a qualified doctor and get treated remotely.
+2. Accessibility of medical services would be increased and would benefit patients without easy access to good medical services. They would be able to reach a qualified doctor and get treated remotely.
 
 3. Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
 
