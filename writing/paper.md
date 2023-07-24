@@ -8,7 +8,7 @@ Prachetas Yeri
 
 TODO: Text added to relevant sections below
 
-### Introduction
+### Abstract
 
 TODO: This section describes your  research project, including the overall aims and the background motivating your research. Whenever possible, you should use one or more concrete examples and technical diagrams.
 
@@ -36,9 +36,7 @@ TODO
 
 ### Related work
 
-TODO: This section includes a broad and detailed review of relevant existing work. The literature review should provide background and context for the reseach project work. The subsections may be organized in whatever manner seems best suited to the material-- chronological, or by topic, or according to some other criteria (e.g., primary versus secondary resources).
-
-If ethical issues are central to this work, you should also address historical and contemporary issues or efforts made to address them.
+Emotion detection has been a prevelant field of research and recently has been popular in various applications. Previously emotion detection has been used to enhance interactions between human-robot interactions.
 
 ### Prototype
 
@@ -79,6 +77,12 @@ TODO
 #### Conclusions
 
 TODO
+
+### Aknowledgements
+Professor Janyl Jumadinova- Allegheny University Professor of Computer Science
+Naveen Yeri
+Meenakshi Yeri
+Thejas Bhat
 
 #### References
 
