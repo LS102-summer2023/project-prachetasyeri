@@ -37,6 +37,9 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
   
   In [4] Convolutional Neural Network(CNN) were used to examine real-time emotions from facial expressions. In the authors game, CNN was deployed to an input video stream to capture the users facial expression allowing them to control the game using their face. The facial changes detected would then be proccessed, decreasing quick facial variations and other noise.Although, emotion detection has been researched upon in several other fields, can it be linked to degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
+### Review of Dataset
+
+The dataset used for the prototype used in this paper is "fer2013" which contains 35,887 images of various classes including surprise, sad, neutral, happy, fear, disgust and angry. For each of these classes various images are included
 ### Prototype
 
 ### Experiments
