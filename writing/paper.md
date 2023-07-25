@@ -44,7 +44,6 @@ The dataset used for the prototype used in this paper is "fer2013" which contain
 
 ### Experiments
 
-#### Experimental Design
 
 
 
@@ -70,14 +69,17 @@ The dataset used for the prototype used in this paper is "fer2013" which contain
 
 
 
-#### Conclusions
-
-
 
 ### Aknowledgements
 Professor Janyl Jumadinova- Allegheny University Professor of Computer Science
+
+
 Naveen Yeri
+
+
 Meenakshi Yeri
+
+
 Thejas Bhat
 
 #### References
