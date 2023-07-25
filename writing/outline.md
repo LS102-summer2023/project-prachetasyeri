@@ -115,11 +115,15 @@ PHASE 3:
      + Conclusions
           - Summary of research findings.
      + References
-          [1] A. I. Siam, N. F. Soliman, A. D. Algarni, F. E. Abd El-Samie, and A. Sedik, “Deploying Machine Learning Techniques for Human Emotion Detection,” vol. 2022, pp. 8032673–16, 2022, doi: 10.1155/2022/8032673.
-          [2] P. Yellowlees, S. Richard Chan, and M. Burke Parish, “The hybrid doctor-patient relationship in the age of technology - Telepsychiatry consultations and the use of virtual space,” vol. 27, no. 6, p. 476, 2015, doi: 10.3109/09540261.2015.1082987.
-          [3] N. Shah, A. Thakrar, S. Visvanathan, and S. Thamban, “Virtual online consultation platforms for secondary care: a review of the options,” vol. 7, no. 1, pp. 135–140, Jan. 2021, doi: 10.1136/bmjinnov-2020-000470.
-          [4] P. Dutta and N. M, “Facial Pain Expression Recognition in Real-Time Videos,” vol. 2018, pp. 7961427–23, Jan. 2018, doi: 10.1155/2018/7961427.
-          [5] Y. Jain, H. Gandhi, A. Burte and A. Vora, "Mental and Physical Health Management System Using ML, Computer Vision and IoT Sensor Network," 2020 4th International Conference on Electronics, Communication and Aerospace Technology (ICECA), Coimbatore, India, 2020, pp. 786-791, doi: 10.1109/ICECA49313.2020.9297447.
+       [1] A. I. Siam, N. F. Soliman, A. D. Algarni, F. E. Abd El-Samie, and A. Sedik, “Deploying Machine Learning Techniques for Human Emotion Detection,” vol. 2022, pp. 8032673–16, 2022, doi: 10.1155/2022/8032673.
+
+       [2] P. Yellowlees, S. Richard Chan, and M. Burke Parish, “The hybrid doctor-patient relationship in the age of technology - Telepsychiatry consultations and the use of virtual space,” vol. 27, no. 6, p. 476, 2015, doi: 10.3109/09540261.2015.1082987.
+
+       [3] N. Shah, A. Thakrar, S. Visvanathan, and S. Thamban, “Virtual online consultation platforms for secondary care: a review of the options,” vol. 7, no. 1, pp. 135–140, Jan. 2021, doi: 10.1136/bmjinnov-2020-000470.
+
+       [4] P. Dutta and N. M, “Facial Pain Expression Recognition in Real-Time Videos,” vol. 2018, pp. 7961427–23, Jan. 2018, doi: 10.1155/2018/7961427.
+
+       [5] Y. Jain, H. Gandhi, A. Burte and A. Vora, "Mental and Physical Health Management System Using ML, Computer Vision and IoT Sensor Network," 2020 4th International Conference on Electronics, Communication and Aerospace Technology (ICECA), Coimbatore, India, 2020, pp. 786-791, doi: 10.1109/ICECA49313.2020.9297447.
           
           
           
