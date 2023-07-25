@@ -25,7 +25,7 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
 
 3. Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
 
-4. According to Infoplease as of August 4, 2020, there were only 2 physicians per 100,000 people in Tanzania whereas in Cuba there were 591 physicians per 100,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
+4. According to World Health Organization(WHO) as of 2020, there were 53.52 physicians per 100,000 people in the Austria whereas in Chad there were only 0.6 physicians per 100,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
 #### Current State of the Art
 
 TODO
@@ -36,8 +36,7 @@ TODO
 
 ### Related work
 
-Emotion detection has been a prevelant field of research and recently has been popular in various applications. Previously emotion detection has been used to enhance interactions between human-robot interactions.
-
+Emotion detection has been a prevelant field of research and recently has been popular in various applications. Fernando Alonso-Martin et al. have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction beeween the robot and user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally they have used emotions to understand the degree of confidence projected by the user[1].
 ### Prototype
 
 TODO: This section describes the implemented prototype - how did you implement your prototype, including the overall design of your prototype, details of the algorithms and tools if any used, etc. Use technical diagrams, equations, algorithms, and paragraphs of text to describe the research that you have completed. Be sure to number all figures and tables and to explicitly refer to them in your text.
@@ -85,10 +84,7 @@ Meenakshi Yeri
 Thejas Bhat
 
 #### References
-
-TODO: Use IEEE format
-
-[1] ...
+[1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
 [2] ...
 
