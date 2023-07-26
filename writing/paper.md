@@ -5,7 +5,7 @@
 Prachetas Yeri
 
 ---
-### Abstract
+#### Abstract
 There are seven types of human emotions shown to be universally recognizable across
 different cultures [2]: anger, disgust, fear, happiness, sadness, surprise, contempt. 
 
@@ -27,9 +27,9 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
 
 
 
-### Review of Literature
+#### Review of Literature
 
-  Previously, research on emotion detection mainly emcompassed of static images and text. Only recently emotion detection has been researched with respect real-time video and can be implemented in several fields. Fernando Alonso-Martin et al. have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction beeween the robot and user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally they have used emotions to understand the degree of confidence projected by the user[1]. 
+  Research on emotion detection mainly emcompassed of static images and text. Only recently emotion detection has been researched with respect real-time video and can be implemented in several fields. Fernando Alonso-Martin et al. have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction beeween the robot and user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally they have used emotions to understand the degree of confidence projected by the user[1]. 
 
   
   Furthermore, Ayman Altameem et al. has researched using a Support Vector Machine(SVM) model which was connected to the vehicles electronics to detect if the driver is drowsy, angered or there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intenisty and various distances between the camera and subject[2]. Bartlett et al. analysed the use of computer vision (CV) and pattern regognition to understand if computers could distinguish between genuine and false pain expresssions. THe researches experimented on videos of genuine pain versus those of false pain. Computer Expression Regognition Tool box(CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examine[3].
@@ -37,9 +37,52 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
   
   In [4] Convolutional Neural Network(CNN) were used to examine real-time emotions from facial expressions. In the authors game, CNN was deployed to an input video stream to capture the users facial expression allowing them to control the game using their face. The facial changes detected would then be proccessed, decreasing quick facial variations and other noise.Although, emotion detection has been researched upon in several other fields, can it be linked to degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
-### Review of Dataset
+#### Exploratory Data Analysis
 
-The dataset used for the prototype used in this paper is "fer2013" which contains 35,887 images of various classes including surprise, sad, neutral, happy, fear, disgust and angry. For each of these classes various images are included
+The dataset used for the prototype used in this paper is "fer2013" which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key feautres identified for each class.
+
+
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f2fa6e3d-1953-451c-8b1c-ab1d7ff7cabe)
+
+###### _Fig 1.0 - Sample of angry images from dataset_
+
+
+   ##### __Noteable features include:__ 
+      
+      1. Eyebrows arched
+      2. Eyes contracted
+      3. Mouth frowned or bent
+      4. Cheeks clinched
+      5. Jaw projected
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/516ecbdd-df2c-4ab7-85a3-16b6c893f166)
+
+###### _Fig 1.1 - Sample of disgusted images from dataset_
+
+
+   ##### __Noteable features include:__
+      
+      1. Eyebrows contracted
+      2. Eyes squinted
+      3. Mouth opened or bent to one side
+      4. Cheeks dropped elongating the face
+      5. Tension visible on forehead
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/978e6d4a-6a6d-43a9-9f0b-fb8716fc12e1)
+
+###### _Fig 1.2 - Sample of fearful images from dataset_
+
+
+   ##### __Noteable features include:__
+      
+      1. Eyebrows thrusted upwards
+      2. Eyes widened
+      3. Mouth opened laterally or vertically
+      4. At times hands touching the face
 ### Prototype
 
 ### Experiments
@@ -66,6 +109,11 @@ The dataset used for the prototype used in this paper is "fer2013" which contain
 
 
 #### Ethical Implications and Recommendations
+
+
+#### Conflict of Intrest
+
+The author declares there is no conflict of Intrest.
 
 
 
