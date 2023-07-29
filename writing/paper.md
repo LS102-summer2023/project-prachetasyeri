@@ -1,6 +1,6 @@
 # LS 102 - Computer Science Research Paper
 
-## Name
+## Title
 
 Prachetas Yeri
 
@@ -20,11 +20,6 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
 3. Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
 
 4. According to World Health Organization(WHO) as of 2020, there were 53.52 physicians per 100,000 people in the Austria whereas in Chad there were only 0.6 physicians per 100,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
-### Current State of the Art
-
-
-### Goals of the Project
-
 
 
 ### Review of Literature
@@ -35,7 +30,15 @@ During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Le
   Furthermore, Ayman Altameem et al. has researched using a Support Vector Machine(SVM) model which was connected to the vehicles electronics to detect if the driver is drowsy, angered or there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intenisty and various distances between the camera and subject[2]. Bartlett et al. analysed the use of computer vision (CV) and pattern regognition to understand if computers could distinguish between genuine and false pain expresssions. THe researches experimented on videos of genuine pain versus those of false pain. Computer Expression Regognition Tool box(CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examine[3].
 
   
-  In [4] Convolutional Neural Network(CNN) were used to examine real-time emotions from facial expressions. In the authors game, CNN was deployed to an input video stream to capture the users facial expression allowing them to control the game using their face. The facial changes detected would then be proccessed, decreasing quick facial variations and other noise.Although, emotion detection has been researched upon in several other fields, can it be linked to degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
+  In [4] Convolutional Neural Network(CNN) were used to examine real-time emotions from facial expressions. In the authors game, CNN was deployed to an input video stream to capture the users facial expression allowing them to control the game using their face. The facial changes detected would then be proccessed, decreasing quick facial variations and other noise. Gkikas et al. analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for auomatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was Vision based temporal exploitation which used CNN for the model. This paper analyses a prototype which also used CNN and deep learning.
+
+
+  
+  
+Although, emotion detection has been researched upon in several other fields, can it be linked to degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
+
+### Goals of the Project
+
 
 ### Exploratory Data Analysis
 
@@ -205,3 +208,5 @@ Thejas Bhat
 [4] S. Ouellet, “Real-time emotion recognition for gaming using deep convolutional network features,” CoRR, vol. abs/1408.3750, 2014.
 
 [5] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
+
+[6] Gkikas, Stefanos, and Manolis Tsiknakis. "Automatic assessment of pain based on deep learning methods: A systematic review." Computer methods and programs in biomedicine 231 (2023): 107365.
