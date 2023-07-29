@@ -11,7 +11,7 @@ different cultures [2]: anger, disgust, fear, happiness, sadness, surprise, cont
 
 
 ## II. Motivation
-During the global COVID-19 pandemic, my grandpa suffered from Alzheimer's and Leukemia. He was in a weakened state of health. Coronavirus exposure would have been undesirable to his health. I wondered if we could engage in online consultations with his doctors. Although possible, I quickly understood that online sessions would not be an adequate method compared to face-to-face interactions. I speculated ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the public would benefit:
+During the COVID-19 pandemic, my grandpa suffered from Alzheimer's and Leukemia. As was in a weakened state of health, Coronavirus exposure would have been undesirable. Wondering if we could engage in online consultations with his doctors. Although possible, I quickly understood that online sessions would not be an adequate method compared to face-to-face interactions. I speculated ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the public would benefit:
 
 1. Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
@@ -164,6 +164,9 @@ The dataset used for the prototype used in this paper is "fer2013" which contain
 
 ### Prototype
 
+__The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_with_CNN model[7] whcih uses CNN and deep learning in training the model.__
+
+
 Emotion detection using computer vision has attracted significant attention to programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially a code from github was found and tesed on. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real time video which would allow for live feed being available for the doctor.
 
 
@@ -171,7 +174,7 @@ Emotion detection using computer vision has attracted significant attention to p
 
 ###### _Fig 2.0 - All packages used in this prototype_
 
-The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_with_CNN model[7] whcih uses CNN and deep learning in training the model . It uses pythons Keras, Tensorflow and Cascade Classifier to predict emotions in real time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and Deep Learning(DL). ANN is inspired bt the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and on TensorFlow[9].
+The prototype uses pythons Keras, Tensorflow and Cascade Classifier to predict emotions in real time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and Deep Learning(DL). ANN is inspired bt the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and on TensorFlow[9].
 
 Tensorflow is another open source library for fast numerical computing. It was created and is maintained my Google. It can run on single CPU systems, GPUs and mobiles[9]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
@@ -182,7 +185,7 @@ Tensorflow is another open source library for fast numerical computing. It was c
 
 Videos are nothing but a series of static images. In emotion detection of real-time videos these static images are analyzed and the emotion predicted is displayed on the module.Cascade Classifier was used identify faces and classify them into  their emotion classes.
 
-### Steps to training the model
+### Steps to train the model
 
   1.  All necessary packages are imported
 
