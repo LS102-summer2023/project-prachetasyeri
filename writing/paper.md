@@ -180,36 +180,68 @@ Tensorflow is another open source library for fast numerical computing. It was c
 ###### _Fig 2.1 - Shows the interest of Tensorflow over the last five years according to Google Trends_
 
 
+Videos are nothing but a series of static images. In emotion detection of real-time videos these static images are analyzed and the emotion predicted is displayed on the module.Cascade Classifier was used identify faces and classify them into  their emotion classes.
 
-### Evaluation
+### Steps to training the model
+
+  1.  All necessary packages are imported
+
+      ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/b5b4a17a-04f5-4f49-afa7-642a63aa1dcd)
+
+  2. All training data was rescaled using image data generator
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/c2befa80-e142-4bbf-81d3-08e2e4e8d2f2)
+
+  3. Training data was preproccessed to grayscale
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/369434b2-2b4d-484f-8dfa-f378ab9a5d5b)
+
+  4. Model structure is created
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/df8e14a8-10df-4451-beb2-51ffc7e4b70e)
+
+  5. Model is trained (Took around an hour on an i7 10th Gen, RTX 2060 and 16GB RAM)
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/0b203231-f881-4aba-a4c4-191dc4b769ab)
+
+  6. Moddel structure is saved in the .json file
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/2fb79537-f026-4e15-972d-68022c18791e)
+
+  7. Trained model weight is saved in the .h5 file
+
+     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/34cf75d6-ce47-4d01-bf8a-7829e45d1364)
+
+
+## VI. Results
+
+## VII. Evaluation
+
+## VIII. Threats to Validity
+
+
+## IX. Conclusion
 
 
 
-### Threats to Validity
-
-
-### Conclusion
-
-
-### Summary of Results
 
 
 
-### Future Work
+## X. Future Work
 
 
 
-### Ethical Implications and Recommendations
+## XI. Ethical Implications and Recommendations
 
 
-### Conflict of Intrest
+## XII. Conflict of Intrest
 
 The author declares there is no conflict of Intrest.
 
 
 
 
-### Aknowledgements
+## XIII. Aknowledgements
 Professor Janyl Jumadinova- Allegheny University Professor of Computer Science
 
 
@@ -221,7 +253,7 @@ Meenakshi Yeri
 
 Thejas Bhat
 
-### References
+## References
 [1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
 [2] A. Altameem, A. Kumar, R. C. Poonia, S. Kumar and A. K. J. Saudagar, "Early Identification and Detection of Driver Drowsiness by Hybrid Machine Learning," in IEEE Access, vol. 9, pp. 162805-162819, 2021, doi: 10.1109/ACCESS.2021.3131601.
