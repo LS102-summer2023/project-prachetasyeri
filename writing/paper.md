@@ -1,6 +1,6 @@
 # LS 102 - Computer Science Research Paper
 
-## Title
+## Emotion Detection in Virtual Medical Consultations: A Computer Vision Approach to Enhancing Pain Assessment and Patient Care
 
 Prachetas Yeri
 
