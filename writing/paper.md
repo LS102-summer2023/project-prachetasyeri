@@ -7,43 +7,40 @@ Prachetas Yeri
 ---
 ## I. Abstract
 
-Currently, the assessment of pain is carried out by means of self-report, external observations, or physiological tests[15]. Though not all patients are able to express their experience of pain, such aspatients in a coma or neonates[16]. Patients may express several emotions that are not identitfied by humans which can be done by nonhuman observers, potentially aiding in diagnosis of diasease[17]. There are seven types of human emotions shown to be universally recognizable across different cultures [14]: anger, disgust, fear, happiness, sadness, surprise, contempt. In recent years, the field of emotion detection has been prevelant. Using Machine Learning(ML) algorithms, emotions are being able to be detected from real-time videos. This research analyzes video feed (unimodal) which uses Convolutional Neural Networks(CNN)- a deep learning techniqueto detect emotion in patients during a virtual consultation. This strives to help medical practitioners understand their patients emotions which could help in their diagnosis of disease. Aditionally, Python libraries such as Keras, Tenosorflow in building of the prototype and used Cascade Classifier. The present study aims to see if these implementations of Computer vision(CV) in virtual consultations between doctors and patients is feasible and improves medical care.
+Currently, assessment of pain occurs through self-report, external observations, or physiological tests[15]. Not all patients can express their experience of pain, such as patients in a coma or neonates[16]. Patients may express several emotions that are unidentified by humans that can be detected by nonhuman observers, potentially aiding in the diagnosis of disease [17]. There are six types of human emotions shown to be universally recognizable across different cultures [14]: anger, disgust, fear, happiness, sadness, and surprise. In recent years, the field of emotion detection has been prevalent. Using Machine Learning (ML) algorithms, emotions can be detected from real-time videos. The research analyzes video feed (unimodal) that uses Convolutional Neural Networks(CNN)- a deep learning technique to detect emotions in patients during a virtual consultation. This strives to help medical practitioners understand their patients' emotions which could help in their diagnosis of disease. Additionally, Python libraries such as Keras, and TensorFlow in the building of the prototype and used Cascade Classifier. The present study aims to see if Computer vision(CV) can be used to identify emotions and pain in virtual consultations between medical practitioners and patients is feasible and can improve medical care.
 
 
 ## II. Motivation
-During the COVID-19 pandemic, my grandfather was diagnosed with Alzheimer's and Leukemia. As he was in a weakened state of health, Coronavirus exposure would have been undesirable to his health. ()Wondering if we could engage in online consultations with his doctors. Although possible, online sessions would not be an adequate method compared to face-to-face interactions. ()Speculating ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the [] public would benefit:
+During the COVID-19 pandemic, my grandfather was diagnosed with Alzheimer's and Leukemia. As he was in a weakened state of health, coronavirus exposure would have been undesirable to his health. Online consultations with his doctors would have been desirable. Although possible, online sessions would not be effective compared to face-to-face interactions. I wondered ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the patients would benefit:
 
-1. Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
+  ◦ Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
-2. Accessibility of medical services would be increased and would benefit patients without easy access to good medical services. They would be able to reach a qualified doctor and get treated remotely.[] 
+  ◦ Accessibility of medical services would be increased and would benefit patients without easy access to good medical services. They would be able to reach a qualified doctor and get treated remotely. 
 
-3. Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
+  ◦ Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
 
-4. According to World Health Organization(WHO) as of 2020, there were 53.52 physicians per 100,000 people in the Austria whereas in Chad there were only 0.6 physicians per 100,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world. [] 
+  ◦ According to World Health Organization[20] as of 2020, there were 53.52 physicians per 10,000 people in Austria whereas in Chad there were only 0.6 physicians per 10,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
 
 
 ## III. Review of Literature
 
-  Based on clinical study 862 inpatients and 115 nurses, researchers proved that Caregivers are often inaccurate in their pain assessments and tend to misjudge pain especially in the case of symptom uncertainty[19]. Research on emotion detection mainly emcompassed of static images and text. Only recently emotion detection has been researched with respect real-time video and can be implemented in several fields. Fernando Alonso-Martin et al.[1]  have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction beeween the robot and user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally they have used emotions to understand the degree of confidence projected by the user[1]. 
+  Based on a clinical study of 862 inpatients and 115 nurses, researchers proved that Caregivers are often inaccurate in their pain assessments and tend to misjudge pain, especially in the case of symptom uncertainty[19]. Research on emotion detection mainly encompasses static images and text. Only recently emotion detection has been researched concerning real-time video and can be implemented in several fields. Fernando Alonso-Martin et al. [1] have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction between the robot and the user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally, they have used emotions to understand the degree of confidence projected by the user. 
 
   
-  Furthermore, Ayman Altameem et al. []  has researched using a Support Vector Machine(SVM) model which was connected to the vehicles electronics to detect if the driver is drowsy, angered or there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intenisty and various distances between the camera and subject[2]. Bartlett et al. []  analysed the use of computer vision (CV) and pattern regognition to understand if computers could distinguish between genuine and false pain expresssions. THe researches experimented on videos of genuine pain versus those of false pain. Computer Expression Regognition Tool box(CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examine[3].
+  Furthermore, Ayman Altameem et al. [2] have researched using a Support Vector Machine(SVM) model which was connected to the vehicle's electronics to detect if the driver is drowsy, angered, or if there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intensity and various distances between the camera and subject. Bartlett et al. [3] analyzed the use of computer vision (CV) and pattern recognition to understand if computers could distinguish between genuine and false pain expressions. The researchers experimented with videos of genuine pain versus those of false pain. Computer Expression Recognition Toolbox (CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examination.
 
   
-  In [4] Convolutional Neural Network(CNN) were used to examine real-time emotions from facial expressions [] . In the authors game, CNN was deployed to an input video stream to capture the users facial expression allowing them to control the game using their face. The facial changes detected would then be proccessed, decreasing quick facial variations and other noise. Gkikas et al. []  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for auomatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was vision based temporal exploitation which used CNN for the model. This paper analyses a prototype which also used CNN and deep learning.
+  Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [4]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [6]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
 
-
-  
-  
-Although, emotion detection has been researched upon in several other fields, can it be linked to degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
+  Although, emotion detection has been researched in several other fields, can it be linked to the degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
 ## IV. Goals of the Project
 
-The following are what the project entails and what is aimed to be analyzed or discussed.
+The following is what the project entails and what is aimed to be analyzed or discussed.
 
    ◦ To correlate emotion and pain detection using CNN and deep learning models
   
-   ◦ Understand if this method is feasible to aid in diagnosis of diseases in virtal consulations
+   ◦ Understand if this method is feasible to aid in the diagnosis of diseases in virtual consultations
   
    ◦ If it is feasible, can the quality and accessibility of medical services improve?
    
@@ -53,7 +50,7 @@ The following are what the project entails and what is aimed to be analyzed or d
 
 ### Exploratory Data Analysis
 
-The dataset used for the prototype used in this paper is "fer2013"[12] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key feautres identified for each class.
+  The dataset used for the prototype used in this paper is "fer2013"[12] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key features identified for each class.
 
 
 
@@ -170,87 +167,54 @@ __The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_wit
 
 ###### _Fig 2.0 - Diagramatic representation of a CNN_
 
-Emotion detection using computer vision has attracted significant attention to programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially a code from github was found and tesed on. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real time video which would allow for live feed being available for the doctor.
-
+  Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/816365ca-4158-46b7-9120-0a14746f7877)
 
 ###### _Fig 2.1 - All packages used in this prototype_
 
-The prototype uses pythons Keras, Tensorflow and Cascade Classifier to predict emotions in real time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and Deep Learning(DL). ANN is inspired bt the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and on TensorFlow[9].
+  The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[9].
 
-Tensorflow is another open source library for fast numerical computing. It was created and is maintained my Google. It can run on single CPU systems, GPUs and mobiles[9]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
+  Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[9]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
 ###### _Fig 2.2 - Shows the interest of Tensorflow over the last five years according to Google Trends_
 
-
-Videos are nothing but a series of static images. In emotion detection of real-time videos these static images are analyzed and the emotion predicted is displayed on the module.Cascade Classifier was used identify faces and classify them into  their emotion classes.
+Videos are nothing but a series of static images. In emotion detection of real-time videos, these static images are analyzed and the emotion predicted is displayed on the module. Cascade Classifier was used to identify faces and classify them into their emotion classes.
 
 ### Steps to train the model
 
-  1.  All necessary packages are imported
+  1. All necessary packages are imported
 
- 
+  2. All training data were rescaled using the image data generator
 
-  2. All training data was rescaled using image data generator
-
-  
-
-  3. Training data was preproccessed to grayscale
-
-
+  3. Training data was preprocessed to grayscale
 
   4. Model structure is created
 
+  5. Model is trained (Took around an hour on an i7 10th Gen, RTX 2060, and 16GB RAM)
 
-
-  5. Model is trained (Took around an hour on an i7 10th Gen, RTX 2060 and 16GB RAM)
-
-
-
-  6. Moddel structure is saved in the .json file
-
-
+  6. Model structure is saved in the .json file
 
   7. Trained model weight is saved in the .h5 file
 
 
-
 ### Steps to test the model
 
-  1.  All necessary packages are imported
+  1. All necessary packages are imported
 
+  2. Load the .json file and create the model
 
+  3. Load weights into the new model
 
-
-  2. Load .json file and create model
-
-
-
-  3. Load weights into new model
-
-
-
-
-  4. Start webcam feed or pass the video path
-
-
-
+  4. Start the webcam feed or pass the video path
 
   5. Draw a box around the identified face
 
-    
-
-
   6. Preprocess each face detected
 
-  
-
-
   7. Predict and display the emotion
-
 
 
 ### Model Evaluation
@@ -265,17 +229,14 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 ###### _Fig 2.4 - Analysis of confusion matrix table_
 
-Based on the analysis of the confusion matrix the model is accurate 25.25% of the times in predicting happy emotion and 20.52% of the times it accurately predicts a neutral face. The model is least accurate in predicting disgusted and surprised faces. To improve model accuracy, the model should be trained on more images for each class. 
-
+Based on the analysis of the confusion matrix the model is accurate 25.25% of the time in predicting happy emotion and 20.52% of the time it accurately predicts a neutral face. The model is the least accurate in predicting disgusted and surprised faces. To improve model accuracy, the model should be trained on more images for each class. 
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/30be22b3-9657-4c58-915d-27ff32041b36)
 
 ###### _Fig 2.5 - Classification report of model_
 
-The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi modal model which captures specific senarios such as reading emotion through eyes alone[10], rlip and cheek movements[11], eyebrow postitioning[11].
-
-
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[10], lip and cheek movements[11], and eyebrow postitioning[11].
 
 ## VI. Experimental Results
 
@@ -290,7 +251,7 @@ Optimal lighting conditions were used and there were no additional accesories to
 
 #### Sunglasses
 
-Optimal lighting conditions were used and large, dark sunglasses were worn. The model reliably detected happy, sad and neutral emotions while it was not reliably in detection of other emotions. The box would sometimes be drawn twice often detecting two faces when there were only one but would flicker hence screenshots could not be taken.
+Optimal lighting conditions were used and large, dark sunglasses were worn. The model reliably detected happy, sad, and neutral emotions while it was not reliable in the detection of other emotions. The box would sometimes be drawn twice often detecting two faces when there was only one but would flicker hence screenshots could not be taken.
 
 ![sunglass](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0bbd0ce-cac9-45ad-b085-307183008b5a)
 
@@ -321,7 +282,7 @@ When there was strong backlight, the model was not able to identify any faces in
 
 #### Hair near eyebrows
 
-Optimal lighting conditions were used but hair was near the eyebrows. The model was not reliably detecting face when hair was near the eyebrows. Once lifted or parted, the model detected face. This is due to eyebrow shape being a critical aspect in facial recognition.
+Optimal lighting conditions were used but hair was near the eyebrows. The model was not reliably detecting the face when hair was near the eyebrows. Once lifted or parted, the model detected the face. This is due to eyebrow shape being a critical aspect of facial recognition.
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/17a85fd4-3e5f-404f-a2f0-d709af7d1a68)
 
@@ -329,31 +290,30 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## VIII. Threats to Validity
 
-  1. Data Quality: Data is extremely important for a model accuracy. If data is biased, mislabeled or incomplete, the models accuracy will be affected
+  ◦ Data Quality: Data is extremely important for model accuracy. If data is biased, mislabeled, or incomplete, the models' accuracy will be affected
 
-  2. Biased Training Data: If data is biased towards certain demographics, the model may not perform well for users from different ethnicities, ages or cultural backgrounds
+  ◦ Biased Training Data: If data is biased towards certain demographics, the model may not perform well for users from different ethnicities, ages, or cultural backgrounds
 
-  3. Environmental Variability: Subjects must have an acceptable camera quality, well-lit environment and a suitable background otherwise the model may not perform as well.
+  ◦ Environmental Variability: Subjects must have an acceptable camera quality, a well-lit environment, and a suitable background otherwise the model may not perform as well.
 
-  5. Overfitting: The model may perform well on training data, but face challenges in real-life senarios
+  ◦ Overfitting: The model may perform well on training data, but face challenges in real-life scenarios
 
-  6. Limited Expressions: Training data may not include specific emotions or culturally specific emotions
+  ◦ Limited Expressions: Training data may not include specific emotions or culturally specific emotions
 
-  7. Context Dependency: Model may underperform when exposed to different and uncontrolled environments
+  ◦ Context Dependency: The model may underperform when exposed to different and uncontrolled environments
 
-  8. Cultural Differences: Emotion expression can vary significantly across different cultures, and a model trained on data from one culture may not be effective for individuals from other cultural backgrounds.
+  ◦ Cultural Differences: Emotion expression can vary significantly across different cultures, and a model trained on data from one culture may not be effective for individuals from other cultural backgrounds.
 
-  9. Limited Labeling Accuracy: Emotion labels provided may not always accurately represent the true emotional state of the subjects.
+  ◦ Limited Labeling Accuracy: Emotion labels provided may not always accurately represent the true emotional state of the subjects.
 
 (OpenAI's ChatGPT, private communication, 31 July 2023).
 
 
 ## IX. Conclusion
 
-The prototype evaluated in this paper used CNN and Cascade Classifier to detect emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modalily, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects face is all key features(eyebrows, nose, lips and chin) are being identified. Creating a model for emotion pain detection is more difficult due to various emotions and lack of widely accepted pain scale[18]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culurally different emotions may be expressed[13]. 
+The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [18]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[13]. 
 
-The idea of detection emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
-
+The idea of detecting emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in the diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
 
 ## X. Future Work
 
@@ -361,7 +321,7 @@ The idea of detection emotions and pain in patients is feasible and can be imple
 
   ◦ Add more images to the dataset for better accuracies
 
-  ◦ Explore additional methods of emotion and pain detection to see if it can be implemented
+  ◦ Explore additional methods of emotion and pain detection to see if they can be implemented
 
   ◦ Find pain images and data from various demographics and ethnicities 
 
@@ -376,13 +336,13 @@ The idea of detection emotions and pain in patients is feasible and can be imple
 
 ## XI. Ethical Implications and Recommendations
 
-  ◦ Patient has not given permission to be on camera or recorded: Signed consent forms need to be given before the consultation.
+  ◦ Patient has not permitted to be on camera or recorded: Signed consent forms need to be given before the consultation.
 
-  ◦ Can doctors rely on the model too much?: Doctors may blame the model in an event of an inacurate diagnosis. The model simply aids the doctor but cannot be fully relied on. 
+  ◦ Can doctors rely on the model too much? Doctors may blame the model in an event of an inaccurate diagnosis. The model simply aids the doctor but cannot be fully relied on. 
 
   ◦ Data privacy issues: Data should be encrypted to avoid being seen by others
 
-  ◦ Is there a chance of ghost observers on either end of the conference? Ghost observers are people not seen in the meeting but observing from a side angle where they cannot be seen by a camera.
+  ◦ Is there a chance of ghost observers at either end of the conference? Ghost observers are people not seen in the meeting but observing from a side angle where they cannot be seen by a camera.
 
 ## XII. Conflict of Intrest
 
@@ -391,15 +351,16 @@ The author declares there is no conflict of Intrest.
 
 ## XIII. Aknowledgements
 
-Mentor: Professor Janyl Jumadinova- Thought basics of ML and helped in any questions that I had for her. Giving feedback and guidance for next steps, she was an integral part of the paper.
+Mentor: Professor Janyl Jumadinova- Thought basics of ML and helped with any questions that I had for her. Giving feedback and guidance for the next steps, she was an integral part of the paper.
 
 Naveen Yeri and Meenakshi Yeri- Gave tips along the way and provoked my imagination.
 
-Thejas Bhat- Assisted in running of the prototype. He helped immensly with implementing the prototype and any code related work.
+Thejas Bhat- Assisted in running the prototype. He helped immensely with implementing the prototype and any code-related work.
 
 Emotion_Detection_with_CNN[7] by Sunny Kusawa
 
-Kaggle Dataset[12]
+FER-2013 Dataset from Kaggle[12]
+
 ## References
 [1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
@@ -437,4 +398,6 @@ Kaggle Dataset[12]
 
 [18] Heiderich, Tatiany M., et al. "Face-based automatic pain assessment: challenges and perspectives in neonatal intensive care units." Jornal de Pediatria (2023).
 
-[19]
+[19] Samolsky Dekel, Boaz Gedaliahu, et al. "Medical evidence influence on inpatients and nurses pain ratings agreement." Pain Research and Management 2016 (2016).
+
+[20] https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)
