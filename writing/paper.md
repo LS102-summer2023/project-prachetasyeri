@@ -169,10 +169,6 @@ __The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_C
 
 Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
-![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/816365ca-4158-46b7-9120-0a14746f7877)
-
-###### _Fig 2.1 - All packages used in this prototype_
-
 The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[14]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[15]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[15]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
