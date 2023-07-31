@@ -1,4 +1,4 @@
-# LS 102 - Computer Science Research Paper
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/327b7ed9-ac0d-42b1-9aa3-fb2958324730)# LS 102 - Computer Science Research Paper
 
 ## Title
 
@@ -215,7 +215,7 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 
 
-### Steps to train the model
+### Steps to test the model
 
   1.  All necessary packages are imported
 
@@ -250,24 +250,54 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 
 ## VI. Experimental Results
-The following experiments were conducted on the model to see what limitations it has. 
+
+The following experiments were conducted on the model to evaluate its performance under varying circumstances. 
+
+
+#### Optimal Conditions
+
+Optimal lighting conditions were used and there were no additional accesories to face. 
+
+![regular](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/347eb2e7-7db4-4dc8-8bb3-5d3f5ac8a847)
 
 
 
+#### Sunglasses
+
+Optimal lighting conditions were used but large, dark sunglasses were worn. 
+
+![sunglass](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0bbd0ce-cac9-45ad-b085-307183008b5a)
 
 
 
+#### Surgical Mask
+
+Optimal lighting conditions were used but a black surgical mask was worn. 
+
+![mask](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0307cc4-ce02-44fa-a8a8-1e3bd0acdf40)
 
 
 
+#### Cap
+
+Optimal lighting conditions were used but cap covered the hair. 
+
+![cap](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e4457a35-dcb7-456a-a16f-8d635aea9050)
 
 
+#### Bad lighting conditions
+
+Non optimal lighting conditions were used. 
 
 
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/fb2f6bae-3efc-4119-8988-1c723fe00f7a)
 
 
+#### Hair near eyebrows
 
+Optimal lighting conditions were used but hair was near the eyebrows. 
 
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/17a85fd4-3e5f-404f-a2f0-d709af7d1a68)
 
 
 ## VII. Evaluation
