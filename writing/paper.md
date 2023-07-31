@@ -249,9 +249,26 @@ Videos are nothing but a series of static images. In emotion detection of real-t
   7. Predict and display the emotion
 
 
+## VI. Experimental Results
+The following experiments were conducted on the model to see what limitations it has. 
 
 
-## VI. Results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## VII. Evaluation
 
