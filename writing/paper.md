@@ -250,14 +250,15 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 
 
-#### Model Evaluation
+### Model Evaluation
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
 ###### _Fig 2.2 - Confusion Matrix of model_
 
 
-![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/cac614c0-5476-4932-bc28-0099f96c2919)
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e320b593-e742-4cb3-b5a0-7fed22d52219)
+
 
 ###### _Fig 2.3 - Analysis of confusion matrix table_
 
@@ -323,13 +324,25 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 
 
-
-
-
-
-## VII. Evaluation
-
 ## VIII. Threats to Validity
+
+  1. Data Quality: Data is extremely important for a model accuracy. If data is biased, mislabeled or incomplete, the models accuracy will be affected
+
+  2. Biased Training Data: If data is biased towards certain demographics, the model may not perform well for users from different ethnicities, ages or cultural backgrounds
+
+  3. Environmental Variability: Subjects must have an acceptable camera quality, well-lit environment and a suitable background otherwise the model may not perform as well.
+
+  5. Overfitting: The model may perform well on training data, but face challenges in real-life senarios
+
+  6. Limited Expressions: Training data may not include specific emotions or culturally specific emotions
+
+  7. Context Dependency: Model may underperform when exposed to different and uncontrolled environments
+
+  8. Cultural Differences: Emotion expression can vary significantly across different cultures, and a model trained on data from one culture may not be effective for individuals from other cultural backgrounds.
+
+  9. Limited Labeling Accuracy: Emotion labels provided may not always accurately represent the true emotional state of the subjects.
+
+(OpenAI's ChatGPT, private communication, 31 July 2023).
 
 
 ## IX. Conclusion
