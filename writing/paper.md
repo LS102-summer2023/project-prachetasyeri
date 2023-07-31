@@ -30,7 +30,7 @@ During the COVID-19 pandemic, my grandfather was diagnosed with Alzheimer's and 
   Furthermore, Ayman Altameem et al. [2] have researched using a Support Vector Machine(SVM) model which was connected to the vehicle's electronics to detect if the driver is drowsy, angered, or if there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intensity and various distances between the camera and subject. Bartlett et al. [3] analyzed the use of computer vision (CV) and pattern recognition to understand if computers could distinguish between genuine and false pain expressions. The researchers experimented with videos of genuine pain versus those of false pain. Computer Expression Recognition Toolbox (CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examination.
 
   
-  Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [4]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [6]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
+  Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [4]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [6]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision-based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
 
   Although, emotion detection has been researched in several other fields, can it be linked to the degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
@@ -46,7 +46,7 @@ The following is what the project entails and what is aimed to be analyzed or di
    
    ◦ Can computers and technology help scale up virtual diagnosis in medical fields?
 
-## V. Methadology
+## V. Methodology
 
 ### Exploratory Data Analysis
 
@@ -57,10 +57,10 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f2fa6e3d-1953-451c-8b1c-ab1d7ff7cabe)
 
-###### _Fig 1.0 - Sample of angry images from dataset_
+###### _Fig 1.0 - Sample of angry images from the dataset_
 
 
-   ##### __Observable features for anger include:__ 
+   ##### __Observable features of "Anger" include:__ 
       
       1. Eyebrows arched
       2. Eyes contracted
@@ -71,28 +71,28 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/516ecbdd-df2c-4ab7-85a3-16b6c893f166)
 
-###### _Fig 1.1 - Sample of disgusted images from dataset_
+###### _Fig 1.1 - Sample of disgusted images from the dataset_
 
 
-   ##### __Observable features for disgust include:__
+   ##### __Observable features of "Disgust" include:__
       
       1. Eyebrows contracted
       2. Eyes squinted
       3. Mouth opened or bent to one side
       4. Cheeks dropped elongating the face
-      5. Tension visible on forehead
+      5. Tension visible on the forehead
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/978e6d4a-6a6d-43a9-9f0b-fb8716fc12e1)
 
-###### _Fig 1.2 - Sample of fearful images from dataset_
+###### _Fig 1.2 - Sample of fearful images from the dataset_
 
 
-   ##### __Observable features for fear include:__
+   ##### __Observable features of "Fear" include:__
 
       1. Frontalis(forehead) tentioned[5]
       2. Mentalis(midline above chin) stretched[5]
-      3. Eyebrows thrusted upwards
+      3. Eyebrows thrust upwards
       4. Eyes widened
       5. Mouth opened laterally or vertically
       6. At times hands touching the face
@@ -100,43 +100,43 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/a8f0f490-4d7b-4a9b-af32-dbe78c585755)
 
-###### _Fig 1.3 - Sample of happy images from dataset_
+###### _Fig 1.3 - Sample of happy images from the dataset_
 
 
-   ##### __Observable features for happiness include:__
+   ##### __Observable features of "Happy" include:__
 
-      1. Orbicularis ocui (ourter cleft of the eye) contracted[5]
+      1. Orbicularis oculi (outer cleft of the eye) contracted[5]
       2. Zygomaticus major(midpoint of a line between nose and ear lobe) raised[5]
       3. Eyebrows relaxed
       4. Eyes slightly closed
-      5. Cheeks contracted (lifted up)
+      5. Cheeks contracted (lifted)
       6. Angle of mouth drawn upward and laterally
       7. Frontalis relaxed
-      8. Nose slightly dialated
+      8. Nose slightly dilated
       9. In most cases, teeth are visible slightly
 
 
   ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f9650aae-7c32-4c42-ab59-5861c00dcc67)
 
-   ###### _Fig 1.4 - Sample of sad images from dataset_
+   ###### _Fig 1.4 - Sample of sad images from the dataset_
 
 
-   ##### __Observable features for sadness include:__
+   ##### __Observable features of "Sad" include:__
       
       1. Corrugator(above medial aspect of left eyebrow) clenched[5]
       2. Depressor Anguli Oris(below left corner of mouth) pronouned[5]
-      3. Eyebrows tentioned
+      3. Eyebrows tense
       4. Eyes slightly closed
       5. Angle of mouth drawn downward (frown)
-      6. Nose slightly dialated
+      6. Nose slightly dilated
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/c9918534-054b-4e4b-a5a3-3f94cd7a0b3c)
 
-###### _Fig 1.5 - Sample of surprise images from dataset_
+###### _Fig 1.5 - Sample of surprise images from the dataset_
 
 
-   ##### __Observable features for surprised include:__
+   ##### __Observable features for "Surprise" include:__
 
       1. Eyebrows raised
       2. Eyes widened
@@ -147,12 +147,12 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/71b25098-5843-43e4-a72c-f94d0f985970)
 
-###### _Fig 1.6 - Sample of neutral images from dataset_
+###### _Fig 1.6 - Sample of neutral images from the dataset_
 
 
-   ##### __Observable features for neutral include:__
+   ##### __Observable features for "Neutral" include:__
 
-      1. Orbicularis ocui relaxed
+      1. Orbicularis oculi relaxed
       2. Zygomaticus major relaxed
       3. Eyebrows relaxed
       4. Eyes neutral
@@ -161,11 +161,11 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ### Prototype
 
-__The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_with_CNN model[7] whcih uses CNN and deep learning in training the model.__
+__The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_CNN model[7] which uses CNN and deep learning in training the model.__
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/668baf35-312d-4d42-86c5-462326663394)
 
-###### _Fig 2.0 - Diagramatic representation of a CNN_
+###### _Fig 2.0 - Diagrammatic representation of a CNN_
 
   Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
@@ -179,7 +179,7 @@ __The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_wit
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
-###### _Fig 2.2 - Shows the interest of Tensorflow over the last five years according to Google Trends_
+###### _Fig 2.2 - Shows the interest in Tensorflow over the last five years according to Google Trends_
 
 Videos are nothing but a series of static images. In emotion detection of real-time videos, these static images are analyzed and the emotion predicted is displayed on the module. Cascade Classifier was used to identify faces and classify them into their emotion classes.
 
@@ -191,13 +191,13 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
   3. Training data was preprocessed to grayscale
 
-  4. Model structure is created
+  4. The model structure is created
 
-  5. Model is trained (Took around an hour on an i7 10th Gen, RTX 2060, and 16GB RAM)
+  5. The model is trained (Took around an hour on an i7 10th Gen, RTX 2060, and 16GB RAM)
 
-  6. Model structure is saved in the .json file
+  6. The model structure is saved in the .json file
 
-  7. Trained model weight is saved in the .h5 file
+  7. The trained model weight is saved in the .h5 file
 
 
 ### Steps to test the model
@@ -245,7 +245,7 @@ The following experiments were conducted on the model to evaluate its performanc
 
 #### Optimal Conditions
 
-Optimal lighting conditions were used and there were no additional accesories to face. The model was clearly able to detect faces and sufficiently classified the emotion.
+Optimal lighting conditions were used and there were no additional accessories to face. The model was able to detect faces and sufficiently classified the emotion.
 
 ![regular](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/347eb2e7-7db4-4dc8-8bb3-5d3f5ac8a847)
 
@@ -267,14 +267,14 @@ Optimal lighting conditions were used and a black surgical mask was worn. When t
 
 #### Cap
 
-Optimal lighting conditions were used but cap covered the hair. The model was able to dectect the face and emotion reliably. Happy face seemed to be detected easier with a cap on.
+Optimal lighting conditions were used but the cap covered the hair. The model was able to detect the face and emotion reliably. The happy face seemed to be detected easier with a cap on.
 
 ![cap](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e4457a35-dcb7-456a-a16f-8d635aea9050)
 
 
 #### Non-optimal lighting conditions
 
-When there was strong backlight, the model was not able to identify any faces in the frame.
+When there was a strong backlight, the model was not able to identify any faces in the frame.
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/fb2f6bae-3efc-4119-8988-1c723fe00f7a)
@@ -336,7 +336,7 @@ The idea of detecting emotions and pain in patients is feasible and can be imple
 
 ## XI. Ethical Implications and Recommendations
 
-  ◦ Patient has not permitted to be on camera or recorded: Signed consent forms need to be given before the consultation.
+  ◦ Patient has not agreed to be on camera or recorded: Signed consent forms need to be given before the consultation.
 
   ◦ Can doctors rely on the model too much? Doctors may blame the model in an event of an inaccurate diagnosis. The model simply aids the doctor but cannot be fully relied on. 
 
@@ -349,7 +349,7 @@ The idea of detecting emotions and pain in patients is feasible and can be imple
 The author declares there is no conflict of Intrest.
 
 
-## XIII. Aknowledgements
+## XIII. Acknowledgements
 
 Mentor: Professor Janyl Jumadinova- Thought basics of ML and helped with any questions that I had for her. Giving feedback and guidance for the next steps, she was an integral part of the paper.
 
