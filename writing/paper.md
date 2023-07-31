@@ -1,4 +1,4 @@
-![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/327b7ed9-ac0d-42b1-9aa3-fb2958324730)# LS 102 - Computer Science Research Paper
+# LS 102 - Computer Science Research Paper
 
 ## Title
 
@@ -11,7 +11,7 @@ different cultures [2]: anger, disgust, fear, happiness, sadness, surprise, cont
 
 
 ## II. Motivation
-During the COVID-19 pandemic, my grandpa suffered from Alzheimer's and Leukemia. As was in a weakened state of health, Coronavirus exposure would have been undesirable. Wondering if we could engage in online consultations with his doctors. Although possible, I quickly understood that online sessions would not be an adequate method compared to face-to-face interactions. I speculated ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the public would benefit:
+During the COVID-19 pandemic, my grandpa suffered from Alzheimer's and Leukemia. As he was in a weakened state of health, Coronavirus exposure would have been undesirable to his health. Wondering if we could engage in online consultations with his doctors. Although possible, online sessions would not be an adequate method compared to face-to-face interactions. Speculating ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the public would benefit:
 
 1. Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
@@ -249,6 +249,12 @@ Videos are nothing but a series of static images. In emotion detection of real-t
   7. Predict and display the emotion
 
 
+
+#### Model Evaluation
+__Confusion Matrix__
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
+
+
 ## VI. Experimental Results
 
 The following experiments were conducted on the model to evaluate its performance under varying circumstances. 
@@ -296,6 +302,11 @@ When there was strong backlight, the model was not able to identify any faces in
 Optimal lighting conditions were used but hair was near the eyebrows. The model was not reliably detecting face when hair was near the eyebrows. Once lifted or parted, the model detected face. This is due to eyebrow shape being a critical aspect in facial recognition.
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/17a85fd4-3e5f-404f-a2f0-d709af7d1a68)
+
+
+
+
+
 
 
 ## VII. Evaluation
