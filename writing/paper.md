@@ -256,15 +256,13 @@ The following experiments were conducted on the model to evaluate its performanc
 
 #### Optimal Conditions
 
-Optimal lighting conditions were used and there were no additional accesories to face. 
+Optimal lighting conditions were used and there were no additional accesories to face. The model was clearly able to detect faces and sufficiently classified the emotion.
 
 ![regular](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/347eb2e7-7db4-4dc8-8bb3-5d3f5ac8a847)
 
-
-
 #### Sunglasses
 
-Optimal lighting conditions were used but large, dark sunglasses were worn. 
+Optimal lighting conditions were used and large, dark sunglasses were worn. The model reliably detected happy, sad and neutral emotions while it was not reliably in detection of other emotions. The box would sometimes be drawn twice often detecting two faces when there were only one but would flicker hence screenshots could not be taken.
 
 ![sunglass](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0bbd0ce-cac9-45ad-b085-307183008b5a)
 
@@ -272,7 +270,7 @@ Optimal lighting conditions were used but large, dark sunglasses were worn.
 
 #### Surgical Mask
 
-Optimal lighting conditions were used but a black surgical mask was worn. 
+Optimal lighting conditions were used and a black surgical mask was worn. When the mask was worn the model could not detect the face and even when the chin was covered the model was no longer able to detect the face.
 
 ![mask](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0307cc4-ce02-44fa-a8a8-1e3bd0acdf40)
 
@@ -280,14 +278,14 @@ Optimal lighting conditions were used but a black surgical mask was worn.
 
 #### Cap
 
-Optimal lighting conditions were used but cap covered the hair. 
+Optimal lighting conditions were used but cap covered the hair. The model was able to dectect the face and emotion reliably. Happy face seemed to be detected easier with a cap on.
 
 ![cap](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e4457a35-dcb7-456a-a16f-8d635aea9050)
 
 
-#### Bad lighting conditions
+#### Non-optimal lighting conditions
 
-Non optimal lighting conditions were used. 
+When there was strong backlight, the model was not able to identify any faces in the frame.
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/fb2f6bae-3efc-4119-8988-1c723fe00f7a)
@@ -295,7 +293,7 @@ Non optimal lighting conditions were used.
 
 #### Hair near eyebrows
 
-Optimal lighting conditions were used but hair was near the eyebrows. 
+Optimal lighting conditions were used but hair was near the eyebrows. The model was not reliably detecting face when hair was near the eyebrows. Once lifted or parted, the model detected face. This is due to eyebrow shape being a critical aspect in facial recognition.
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/17a85fd4-3e5f-404f-a2f0-d709af7d1a68)
 
