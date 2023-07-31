@@ -166,13 +166,16 @@ The dataset used for the prototype used in this paper is "fer2013"[12] which con
 
 __The model this paper analyzes and uses in Sunny Kusawa's Emotion_detection_with_CNN model[7] whcih uses CNN and deep learning in training the model.__
 
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/668baf35-312d-4d42-86c5-462326663394)
+
+###### _Fig 2.0 - Diagramatic representation of a CNN_
 
 Emotion detection using computer vision has attracted significant attention to programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially a code from github was found and tesed on. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real time video which would allow for live feed being available for the doctor.
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/816365ca-4158-46b7-9120-0a14746f7877)
 
-###### _Fig 2.0 - All packages used in this prototype_
+###### _Fig 2.1 - All packages used in this prototype_
 
 The prototype uses pythons Keras, Tensorflow and Cascade Classifier to predict emotions in real time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and Deep Learning(DL). ANN is inspired bt the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and on TensorFlow[9].
 
@@ -180,7 +183,7 @@ Tensorflow is another open source library for fast numerical computing. It was c
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
-###### _Fig 2.1 - Shows the interest of Tensorflow over the last five years according to Google Trends_
+###### _Fig 2.2 - Shows the interest of Tensorflow over the last five years according to Google Trends_
 
 
 Videos are nothing but a series of static images. In emotion detection of real-time videos these static images are analyzed and the emotion predicted is displayed on the module.Cascade Classifier was used identify faces and classify them into  their emotion classes.
@@ -254,13 +257,13 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
-###### _Fig 2.2 - Confusion Matrix of model_
+###### _Fig 2.3 - Confusion Matrix of model_
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e320b593-e742-4cb3-b5a0-7fed22d52219)
 
 
-###### _Fig 2.3 - Analysis of confusion matrix table_
+###### _Fig 2.4 - Analysis of confusion matrix table_
 
 Based on the analysis of the confusion matrix the model is accurate 25.25% of the times in predicting happy emotion and 20.52% of the times it accurately predicts a neutral face. The model is least accurate in predicting disgusted and surprised faces. To improve model accuracy, the model should be trained on more images for each class. 
 
@@ -268,7 +271,7 @@ Based on the analysis of the confusion matrix the model is accurate 25.25% of th
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/30be22b3-9657-4c58-915d-27ff32041b36)
 
-###### _Fig 2.4 - Classification report of model_
+###### _Fig 2.5 - Classification report of model_
 
 The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi modal model which captures specific senarios such as reading emotion through eyes alone[10], rlip and cheek movements[11], eyebrow postitioning[11].
 
