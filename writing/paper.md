@@ -218,8 +218,7 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 ###### _Fig 2.3 - Confusion Matrix of model_
 
 
-![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e320b593-e742-4cb3-b5a0-7fed22d52219)
-
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/cbea39a0-6753-498d-889b-bca444a7dfd2)
 
 ###### _Fig 2.4 - Analysis of confusion matrix table_
 
