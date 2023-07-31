@@ -251,8 +251,26 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
 
 #### Model Evaluation
-__Confusion Matrix__
+
+
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
+###### _Fig 2.2 - Confusion Matrix of model_
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/cac614c0-5476-4932-bc28-0099f96c2919)
+
+###### _Fig 2.3 - Analysis of confusion matrix table_
+
+Based on the analysis of the confusion matrix the model is accurate 25.25% of the times in predicting happy emotion and 20.52% of the times it accurately predicts a neutral face. The model is least accurate in predicting disgusted and surprised faces. To improve model accuracy, the model should be trained on more images for each class. 
+
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/30be22b3-9657-4c58-915d-27ff32041b36)
+
+###### _Fig 2.4 - Classification report of model_
+
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi modal model which captures specific senarios such as reading emotion through eyes alone[10], rlip and cheek movements[11], eyebrow postitioning[11].
+
 
 
 ## VI. Experimental Results
@@ -365,3 +383,7 @@ Thejas Bhat
 [8] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
 
 [9] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
+
+[10] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
+
+[11] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
