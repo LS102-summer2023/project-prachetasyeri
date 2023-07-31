@@ -354,29 +354,45 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## X. Future Work
 
+  ◦ Create synthetic data for pain detection
+
+  ◦ Add more images to the dataset for better accuracies
+
+  ◦ Explore additional methods of emotion and pain detection to see if it can be implemented
+
+  ◦ Find pain images and data from various demographics and ethnicities 
+
+  ◦ Test the current model on pain data
+
+  ◦ Extend the analysis to near real-time video sessions (Facetime, Google Meet)
+
+  ◦ Can this tie to the training of professionals using emotion detection in links with augmented reality?
+
+  ◦ Include audio in the future - transition into audio to add to the algorithm
 
 
 ## XI. Ethical Implications and Recommendations
 
+  ◦ Patient has not given permission to be on camera or recorded: Signed consent forms need to be given before the consultation.
+
+  ◦ Can doctors rely on the model too much?: Doctors may blame the model in an event of an inacurate diagnosis. The model simply aids the doctor but cannot be fully relied on. 
+
+  ◦ Data privacy issues: Data should be encrypted to avoid being seen by others
+
+  ◦ Is there a chance of ghost observers on either end of the conference? Ghost observers are people not seen in the meeting but observing from a side angle where they cannot be seen by a camera.
 
 ## XII. Conflict of Intrest
 
 The author declares there is no conflict of Intrest.
 
 
-
-
 ## XIII. Aknowledgements
-Professor Janyl Jumadinova- Allegheny University Professor of Computer Science
 
+Mentor: Professor Janyl Jumadinova- Thought basics of ML and helped in any questions that I had for her. Giving feedback and guidance for next steps, she was an integral part of the paper.
 
-Naveen Yeri
+Naveen Yeri and Meenakshi Yeri- Gave tips along the way and provoked my imagination.
 
-
-Meenakshi Yeri
-
-
-Thejas Bhat
+Thejas Bhat- Assisted in running of the prototype. He helped immensly with implementing the prototype and any code related work.
 
 ## References
 [1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
