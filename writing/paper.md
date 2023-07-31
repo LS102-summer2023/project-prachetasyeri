@@ -369,7 +369,7 @@ FER-2013 Dataset from Kaggle[20]
 
 [4] Ekman, Paul. "Universals and cultural differences in facial expressions of emotion." Nebraska symposium on motivation. University of Nebraska Press, 1971.
 
-[5] https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)
+[5] “Medical doctors (per 10 000 population).” World Health Organization. https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population) (accessed: Jul. 31, 2023).
 
 [6] Samolsky Dekel, Boaz Gedaliahu, et al. "Medical evidence influence on inpatients and nurses pain ratings agreement." Pain Research and Management 2016 (2016).
 
@@ -385,7 +385,7 @@ FER-2013 Dataset from Kaggle[20]
 
 [12] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
 
-[13] https://github.com/datamagic2020/Emotion_detection_with_CNN
+[13] “datamagic2020/Emotion_detection_with_CNN - GitHub.” GitHub. https://github.com/datamagic2020/Emotion_detection_with_CNN (accessed: Jul. 31, 2023).
 
 [14] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
 
@@ -399,4 +399,4 @@ FER-2013 Dataset from Kaggle[20]
 
 [19] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
 
-[20] https://www.kaggle.com/datasets/msambare/fer2013
+[20] “FER-2013 | Kaggle.” Kaggle. https://www.kaggle.com/datasets/msambare/fer2013 (accessed: Jul. 31, 2023).
