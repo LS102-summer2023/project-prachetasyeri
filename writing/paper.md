@@ -7,7 +7,7 @@ Prachetas Yeri
 ---
 ## I. Abstract
 
-Currently, assessment of pain occurs through self-report, external observations, or physiological tests[15]. Not all patients can express their experience of pain, such as patients in a coma or neonates[16]. Patients may express several emotions that are unidentified by humans that can be detected by nonhuman observers, potentially aiding in the diagnosis of disease [17]. There are six types of human emotions shown to be universally recognizable across different cultures [14]: anger, disgust, fear, happiness, sadness, and surprise. In recent years, the field of emotion detection has been prevalent. Using Machine Learning (ML) algorithms, emotions can be detected from real-time videos. The research analyzes video feed (unimodal) that uses Convolutional Neural Networks(CNN)- a deep learning technique to detect emotions in patients during a virtual consultation. This strives to help medical practitioners understand their patients' emotions which could help in their diagnosis of disease. Additionally, Python libraries such as Keras, and TensorFlow in the building of the prototype and used Cascade Classifier. The present study aims to see if Computer vision(CV) can be used to identify emotions and pain in virtual consultations between medical practitioners and patients is feasible and can improve medical care.
+Currently, assessment of pain occurs through self-report, external observations, or physiological tests[1]. Not all patients can express their experience of pain, such as patients in a coma or neonates[2]. Patients may express several emotions that are unidentified by humans that can be detected by nonhuman observers, potentially aiding in the diagnosis of disease [3]. There are six types of human emotions shown to be universally recognizable across different cultures [4]: anger, disgust, fear, happiness, sadness, and surprise. In recent years, the field of emotion detection has been prevalent. Using Machine Learning (ML) algorithms, emotions can be detected from real-time videos. The research analyzes video feed (unimodal) that uses Convolutional Neural Networks(CNN)- a deep learning technique to detect emotions in patients during a virtual consultation. This strives to help medical practitioners understand their patients' emotions which could help in their diagnosis of disease. Additionally, Python libraries such as Keras, and TensorFlow in the building of the prototype and used Cascade Classifier. The present study aims to see if Computer Vision(CV) can be used to identify emotions and pain in virtual consultations between medical practitioners and patients is feasible and can improve medical care.
 
 
 ## II. Motivation
@@ -19,18 +19,18 @@ During the COVID-19 pandemic, my grandfather was diagnosed with Alzheimer's and 
 
   ◦ Patients would be able to get multiple opinions from doctors with completely different perspectives. This could include doctors from different backgrounds, qualifications, and doctors from different countries.
 
-  ◦ According to World Health Organization[20] as of 2020, there were 53.52 physicians per 10,000 people in Austria whereas in Chad there were only 0.6 physicians per 10,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the              medical state of the world.
+  ◦ According to World Health Organization[5] as of 2020, there were 53.52 physicians per 10,000 people in Austria whereas in Chad there were only 0.6 physicians per 10,000 people. If online consultations are feasible, the ratio of physicians to patients would be drastically increased improving the medical state of the world.
 
 
 ## III. Review of Literature
 
-Based on a clinical study of 862 inpatients and 115 nurses, researchers proved that Caregivers are often inaccurate in their pain assessments and tend to misjudge pain, especially in the case of symptom uncertainty[19]. Research on emotion detection mainly encompasses static images and text. Only recently emotion detection has been researched concerning real-time video and can be implemented in several fields. Fernando Alonso-Martin et al. [1] have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction between the robot and the user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally, they have used emotions to understand the degree of confidence projected by the user. 
+Based on a clinical study of 862 inpatients and 115 nurses, researchers proved that Caregivers are often inaccurate in their pain assessments and tend to misjudge pain, especially in the case of symptom uncertainty[6]. Research on emotion detection mainly encompasses static images and text. Only recently emotion detection has been researched concerning real-time video and can be implemented in several fields. Fernando Alonso-Martin et al. [7] have used a multimodal user-emotion detection system for social robots. Using emotion detection information from the user, the interaction between the robot and the user makes its way towards a more probable interaction and allows the robot the dialog to adapt. Additionally, they have used emotions to understand the degree of confidence projected by the user. 
 
   
-Furthermore, Ayman Altameem et al. [2] have researched using a Support Vector Machine(SVM) model which was connected to the vehicle's electronics to detect if the driver is drowsy, angered, or if there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intensity and various distances between the camera and subject. Bartlett et al. [3] analyzed the use of computer vision (CV) and pattern recognition to understand if computers could distinguish between genuine and false pain expressions. The researchers experimented with videos of genuine pain versus those of false pain. Computer Expression Recognition Toolbox (CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examination.
+Furthermore, Ayman Altameem et al. [8] have researched using a Support Vector Machine(SVM) model which was connected to the vehicle's electronics to detect if the driver is drowsy, angered, or if there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intensity and various distances between the camera and subject. Bartlett et al. [9] analyzed the use of computer vision (CV) and pattern recognition to understand if computers could distinguish between genuine and false pain expressions. The researchers experimented with videos of genuine pain versus those of false pain. Computer Expression Recognition Toolbox (CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examination.
 
   
-Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [4]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [6]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision-based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
+Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [10]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [11]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision-based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
 
 Although, emotion detection has been researched in several other fields, can it be linked to the degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
@@ -50,7 +50,7 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ### Exploratory Data Analysis
 
-The dataset used for the prototype used in this paper is "fer2013"[12] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key features identified for each class.
+The dataset used for the prototype used in this paper is "fer2013" downloaded from Kaggle[20] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key features identified for each class.
 
 
 
@@ -90,8 +90,8 @@ The dataset used for the prototype used in this paper is "fer2013"[12] which con
 
    ##### __Observable features of "Fear" include:__
 
-      1. Frontalis(forehead) tentioned[5]
-      2. Mentalis(midline above chin) stretched[5]
+      1. Frontalis(forehead) tentioned[12]
+      2. Mentalis(midline above chin) stretched[12]
       3. Eyebrows thrust upwards
       4. Eyes widened
       5. Mouth opened laterally or vertically
@@ -105,8 +105,8 @@ The dataset used for the prototype used in this paper is "fer2013"[12] which con
 
    ##### __Observable features of "Happy" include:__
 
-      1. Orbicularis oculi (outer cleft of the eye) contracted[5]
-      2. Zygomaticus major(midpoint of a line between nose and ear lobe) raised[5]
+      1. Orbicularis oculi (outer cleft of the eye) contracted[12]
+      2. Zygomaticus major(midpoint of a line between nose and ear lobe) raised[12]
       3. Eyebrows relaxed
       4. Eyes slightly closed
       5. Cheeks contracted (lifted)
@@ -123,8 +123,8 @@ The dataset used for the prototype used in this paper is "fer2013"[12] which con
 
    ##### __Observable features of "Sad" include:__
       
-      1. Corrugator(above medial aspect of left eyebrow) clenched[5]
-      2. Depressor Anguli Oris(below left corner of mouth) pronouned[5]
+      1. Corrugator(above medial aspect of left eyebrow) clenched[12]
+      2. Depressor Anguli Oris(below left corner of mouth) pronouned[12]
       3. Eyebrows tense
       4. Eyes slightly closed
       5. Angle of mouth drawn downward (frown)
@@ -161,7 +161,7 @@ The dataset used for the prototype used in this paper is "fer2013"[12] which con
 
 ### Prototype
 
-__The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_CNN model[7] which uses CNN and deep learning in training the model.__
+__The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_CNN model[13] which uses CNN and deep learning in training the model.__
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/668baf35-312d-4d42-86c5-462326663394)
 
@@ -173,7 +173,7 @@ Emotion detection using computer vision has attracted significant attention from
 
 ###### _Fig 2.1 - All packages used in this prototype_
 
-The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[8]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[9]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[9]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
+The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[14]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[15]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[15]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
@@ -234,7 +234,7 @@ Based on the analysis of the confusion matrix the model is accurate 25.25% of th
 
 ###### _Fig 2.5 - Classification report of model_
 
-The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[10], lip and cheek movements[11], and eyebrow postitioning[11].
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[16], lip and cheek movements[17], and eyebrow postitioning[17].
 
 ## VI. Experimental Results
 
@@ -309,7 +309,7 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## IX. Conclusion
 
-The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [18]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[13]. 
+The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [18]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[19]. 
 
 The idea of detecting emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in the diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
 
@@ -355,47 +355,48 @@ Naveen Yeri and Meenakshi Yeri- Gave tips along the way and provoked my imaginat
 
 Thejas Bhat- Assisted in running the prototype. He helped immensely with implementing the prototype and any code-related work.
 
-Emotion_Detection_with_CNN[7] by Sunny Kusawa
+Emotion_Detection_with_CNN[13] by Sunny Kusawa
 
-FER-2013 Dataset from Kaggle[12]
+FER-2013 Dataset from Kaggle[20]
 
 ## References
-[1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
-[2] A. Altameem, A. Kumar, R. C. Poonia, S. Kumar and A. K. J. Saudagar, "Early Identification and Detection of Driver Drowsiness by Hybrid Machine Learning," in IEEE Access, vol. 9, pp. 162805-162819, 2021, doi: 10.1109/ACCESS.2021.3131601.
+[1]  P. Werner, A. Al-Hamadi, R. Niese, S. Walter, S. Gruss, and H. C. Traue, “Automatic pain recognition from video and biomedical signals,” in Proceedings of 2014 22nd International Conference on Pattern Recognition (ICPR), pp. 4582–4587, IEEE, Stockholm, Sweden, August 2014.
 
-[3] M. S. Bartlett, G. C. Littlewort, M. G. Frank, and K. Lee,“Automatic decoding of facial movements reveals deceptivepain expressions,” Current Biology, vol. 24, no. 7, pp. 738–743, 2014.
+[2] R. Kharghanian, A. Peiravi, and F. Moradi, “Pain detection from facial images using unsupervised feature learning approach,” in Proceedings of 2016 38th Annual International Journal of Healthcare Engineering 21 Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), pp. 419–422, IEEE, Orlando, FL, USA, August 2016.
 
-[4] S. Ouellet, “Real-time emotion recognition for gaming using deep convolutional network features,” CoRR, vol. abs/1408.3750, 2014.
+[3] A. B. Ashraf, S. Lucey, J. F. Cohn et al., “)e painful face–pain expression recognition using active appearance models,” Image and Vision Computing, vol. 27, no. 12, pp. 1788–1796, 2009.
 
-[5] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
+[4] Ekman, Paul. "Universals and cultural differences in facial expressions of emotion." Nebraska symposium on motivation. University of Nebraska Press, 1971.
 
-[6] Gkikas, Stefanos, and Manolis Tsiknakis. "Automatic assessment of pain based on deep learning methods: A systematic review." Computer methods and programs in biomedicine 231 (2023): 107365.
+[5] https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)
 
-[7] https://github.com/datamagic2020/Emotion_detection_with_CNN
+[6] Samolsky Dekel, Boaz Gedaliahu, et al. "Medical evidence influence on inpatients and nurses pain ratings agreement." Pain Research and Management 2016 (2016).
 
-[8] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
+[7] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
-[9] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
+[8] A. Altameem, A. Kumar, R. C. Poonia, S. Kumar and A. K. J. Saudagar, "Early Identification and Detection of Driver Drowsiness by Hybrid Machine Learning," in IEEE Access, vol. 9, pp. 162805-162819, 2021, doi: 10.1109/ACCESS.2021.3131601.
 
-[10] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
+[9] M. S. Bartlett, G. C. Littlewort, M. G. Frank, and K. Lee,“Automatic decoding of facial movements reveals deceptivepain expressions,” Current Biology, vol. 24, no. 7, pp. 738–743, 2014.
 
-[11] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
+[10] S. Ouellet, “Real-time emotion recognition for gaming using deep convolutional network features,” CoRR, vol. abs/1408.3750, 2014.
 
-[12] https://www.kaggle.com/datasets/msambare/fer2013
+[11] Gkikas, Stefanos, and Manolis Tsiknakis. "Automatic assessment of pain based on deep learning methods: A systematic review." Computer methods and programs in biomedicine 231 (2023): 107365.
 
-[13] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
+[12] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
 
-[14] Ekman, Paul. "Universals and cultural differences in facial expressions of emotion." Nebraska symposium on motivation. University of Nebraska Press, 1971.
+[13] https://github.com/datamagic2020/Emotion_detection_with_CNN
 
-[15]  P. Werner, A. Al-Hamadi, R. Niese, S. Walter, S. Gruss, and H. C. Traue, “Automatic pain recognition from video and biomedical signals,” in Proceedings of 2014 22nd International Conference on Pattern Recognition (ICPR), pp. 4582–4587, IEEE, Stockholm, Sweden, August 2014.
+[14] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
 
-[16] R. Kharghanian, A. Peiravi, and F. Moradi, “Pain detection from facial images using unsupervised feature learning approach,” in Proceedings of 2016 38th Annual International Journal of Healthcare Engineering 21 Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), pp. 419–422, IEEE, Orlando, FL, USA, August 2016.
+[15] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
 
-[17] A. B. Ashraf, S. Lucey, J. F. Cohn et al., “)e painful face–pain expression recognition using active appearance models,” Image and Vision Computing, vol. 27, no. 12, pp. 1788–1796, 2009.
+[16] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
+
+[17] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
 
 [18] Heiderich, Tatiany M., et al. "Face-based automatic pain assessment: challenges and perspectives in neonatal intensive care units." Jornal de Pediatria (2023).
 
-[19] Samolsky Dekel, Boaz Gedaliahu, et al. "Medical evidence influence on inpatients and nurses pain ratings agreement." Pain Research and Management 2016 (2016).
+[19] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
 
-[20] https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)
+[20] https://www.kaggle.com/datasets/msambare/fer2013
