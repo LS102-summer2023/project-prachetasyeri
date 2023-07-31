@@ -6,8 +6,8 @@ Prachetas Yeri
 
 ---
 ## I. Abstract
-There are seven types of human emotions shown to be universally recognizable across
-different cultures [2]: anger, disgust, fear, happiness, sadness, surprise, contempt. 
+
+Currently, the assessment of pain is carried out by means of self-report, external observations, or physiological tests[15]. Though not all patients are able to express their experience of pain, such aspatients in a coma or neonates[16]. Patients may express several emotions that are not identitfied by humans which can be done by nonhuman observers, potentially aiding in diagnosis of diasease[17]. There are seven types of human emotions shown to be universally recognizable across different cultures [14]: anger, disgust, fear, happiness, sadness, surprise, contempt. In recent years, the field of emotion detection has been prevelant. Using Machine Learning(ML) algorithms, emotions are being able to be detected from real-time videos. This paper analyzes a unimodal prototype which uses Convolutional Neural Networks(CNN)- a deep learning techniqueto detect emotion in patients during a virtual consultation. This strives to help medical practitioners understand their patients emotions which could help in their diagnosis of disease. Aditionally, Python libraries such as Keras, Tenosorflow in building of the prototype and used Cascade Classifier. The present study aims to see if these implementations of Computer vision(CV) in virtual consultations between doctors and patients is feasible and improves medical care.
 
 
 ## II. Motivation
@@ -53,7 +53,7 @@ The following are what the project entails and what is aimed to be analyzed or d
 
 ### Exploratory Data Analysis
 
-The dataset used for the prototype used in this paper is "fer2013" which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key feautres identified for each class.
+The dataset used for the prototype used in this paper is "fer2013"[12] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key feautres identified for each class.
 
 
 
@@ -347,9 +347,9 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## IX. Conclusion
 
+The prototype evaluated in this paper used CNN and Cascade Classifier to detect emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modalily, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects face is all key features(eyebrows, nose, lips and chin) are being identified. Creating a model for emotion pain detection is more difficult due to various emotions and lack of widely accepted pain scale. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culurally different emotions may be expressed[13]. 
 
-
-
+The idea of detection emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
 
 
 ## X. Future Work
@@ -394,6 +394,9 @@ Naveen Yeri and Meenakshi Yeri- Gave tips along the way and provoked my imaginat
 
 Thejas Bhat- Assisted in running of the prototype. He helped immensly with implementing the prototype and any code related work.
 
+Emotion_Detection_with_CNN[7] by Sunny Kusawa
+
+Kaggle Dataset[12]
 ## References
 [1] F. Alonso-Martín, M. Malfaz, J. Sequeira, J. Gorostiza, and M. Salichs, “A Multimodal Emotion Detection System during Human–Robot Interaction,” Sensors, vol. 13, no. 11, pp. 15549–15581, Nov. 2013, doi: 10.3390/s131115549.
 
@@ -416,3 +419,15 @@ Thejas Bhat- Assisted in running of the prototype. He helped immensly with imple
 [10] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
 
 [11] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
+
+[12] https://www.kaggle.com/datasets/msambare/fer2013
+
+[13] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
+
+[14] Ekman, Paul. "Universals and cultural differences in facial expressions of emotion." Nebraska symposium on motivation. University of Nebraska Press, 1971.
+
+[15]  P. Werner, A. Al-Hamadi, R. Niese, S. Walter, S. Gruss, and H. C. Traue, “Automatic pain recognition from video and biomedical signals,” in Proceedings of 2014 22nd International Conference on Pattern Recognition (ICPR), pp. 4582–4587, IEEE, Stockholm, Sweden, August 2014.
+
+[16] R. Kharghanian, A. Peiravi, and F. Moradi, “Pain detection from facial images using unsupervised feature learning approach,” in Proceedings of 2016 38th Annual International Journal of Healthcare Engineering 21 Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), pp. 419–422, IEEE, Orlando, FL, USA, August 2016.
+
+[17] A. B. Ashraf, S. Lucey, J. F. Cohn et al., “)e painful face–pain expression recognition using active appearance models,” Image and Vision Computing, vol. 27, no. 12, pp. 1788–1796, 2009.
