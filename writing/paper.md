@@ -189,68 +189,66 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 
   1.  All necessary packages are imported
 
-      ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/b5b4a17a-04f5-4f49-afa7-642a63aa1dcd)
+ 
 
   2. All training data was rescaled using image data generator
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/c2befa80-e142-4bbf-81d3-08e2e4e8d2f2)
+  
 
   3. Training data was preproccessed to grayscale
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/369434b2-2b4d-484f-8dfa-f378ab9a5d5b)
+
 
   4. Model structure is created
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/df8e14a8-10df-4451-beb2-51ffc7e4b70e)
+
 
   5. Model is trained (Took around an hour on an i7 10th Gen, RTX 2060 and 16GB RAM)
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/0b203231-f881-4aba-a4c4-191dc4b769ab)
+
 
   6. Moddel structure is saved in the .json file
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/2fb79537-f026-4e15-972d-68022c18791e)
+
 
   7. Trained model weight is saved in the .h5 file
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/34cf75d6-ce47-4d01-bf8a-7829e45d1364)
 
 
 ### Steps to train the model
 
   1.  All necessary packages are imported
 
-      ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/ecc5befa-f5f2-4003-92dd-da6b2f504bc7)
+
 
 
   2. Load .json file and create model
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/2bbe100c-186a-4998-88d1-ab4510c27c0f)
 
 
   3. Load weights into new model
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/40bb718a-4fe2-4e86-97c1-9f43e1649b3f)
+
 
 
   4. Start webcam feed or pass the video path
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/89d8cc98-c95b-416b-ad6e-71948463e7f8)
+
 
 
   5. Draw a box around the identified face
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/1595461f-a563-408e-920e-d427c0ca8cb2)
+    
 
 
   6. Preprocess each face detected
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/47761ee7-d451-42df-9134-033ef7f58e63)
+  
 
 
   7. Predict and display the emotion
 
-     ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/4ecc67aa-d719-41ed-9241-299a245537a4)
+
 
 
 ## VI. Results
