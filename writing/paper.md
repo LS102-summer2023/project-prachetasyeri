@@ -423,7 +423,7 @@ FER-2013 Dataset from Kaggle[12]
 
 [20] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
 
-[21] 
+[21] “Essential Things You Need to Know About F1-Score | by Zeya LT ..” Medium. https://towardsdatascience.com/essential-things-you-need-to-know-about-f1-score-dbd973bf1a3 (accessed: Aug. 01, 2023).
 
 [22] Heiderich, Tatiany M., et al. "Face-based automatic pain assessment: challenges and perspectives in neonatal intensive care units." Jornal de Pediatria (2023).
 
