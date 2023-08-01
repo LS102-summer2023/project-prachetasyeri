@@ -30,7 +30,7 @@ Based on a clinical study of 862 inpatients and 115 nurses, researchers proved t
 Furthermore, Ayman Altameem et al. [8] have researched using a Support Vector Machine(SVM) model which was connected to the vehicle's electronics to detect if the driver is drowsy, angered, or if there is any sudden change in emotion. This allows the model to identify if they are driving safely and if not, alerts the driver and slows the car down. The algorithm was tested with several different parameters including different levels of light intensity and various distances between the camera and subject. Bartlett et al. [9] analyzed the use of computer vision (CV) and pattern recognition to understand if computers could distinguish between genuine and false pain expressions. The researchers experimented with videos of genuine pain versus those of false pain. Computer Expression Recognition Toolbox (CERT) analyzed the videos and showed significant improvements in accuracies of detecting false pain in comparison to human examination.
 
   
-Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [10]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [11]  analyze different automatic methods to asses pain based on deep learning methods. They identified one hundred ten publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision-based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
+Convolutional Neural Networks (CNN) were used to examine real-time emotions from facial expressions [10]. In the author's game, CNN was deployed to an input video stream to capture the user's facial expression allowing them to control the game using their face. The facial changes detected would then be processed, decreasing quick facial variations and other noise. Gkikas et al. [11]  analyze different automatic methods to asses pain based on deep learning methods. They identified 110 publications and sorted them by the number of channels and if the temporal dimension was used. The results showed several multimodal approaches for automatic pain estimation and observed significant improvements when temporal exploitation of modalities was used. One method discussed in the paper was a vision-based temporal exploitation which used CNN for the model. This paper analyses a prototype that also used CNN and deep learning.
 
 Although, emotion detection has been researched in several other fields, can it be linked to the degree of pain felt by patients and be conveyed to the physician so they can act accordingly?
 
@@ -50,14 +50,14 @@ The following is what the project entails and what is aimed to be analyzed or di
 
 ### Exploratory Data Analysis
 
-The dataset used for the prototype used in this paper is "fer2013" downloaded from Kaggle[20] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key features identified for each class.
+The dataset used for the prototype used in this paper is "fer2013" downloaded from Kaggle[12] which contains 35,887 images of various classes (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset used in the model was downloaded from Kaggle. The dataset consists of 48x48 grayscale images of unique faces. Each face is approximately centered and is the same size in the image to avoid training mismatches. In the current prototype, an 80% (28,709 images) for training data and 20% (7,117 images) for testing data split was used. Below are examples of the dataset and some key features identified for each class.
 
 
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f2fa6e3d-1953-451c-8b1c-ab1d7ff7cabe)
 
-###### _Fig 1.0 - Sample of angry images from the dataset[20]_
+###### _Fig 1.0 - Sample of angry images from the dataset[12]_
 
 
    ##### __Observable features of "Anger" include:__ 
@@ -71,7 +71,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/516ecbdd-df2c-4ab7-85a3-16b6c893f166)
 
-###### _Fig 1.1 - Sample of disgusted images from the dataset[20]_
+###### _Fig 1.1 - Sample of disgusted images from the dataset[12]_
 
 
    ##### __Observable features of "Disgust" include:__
@@ -85,13 +85,13 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/978e6d4a-6a6d-43a9-9f0b-fb8716fc12e1)
 
-###### _Fig 1.2 - Sample of fearful images from the dataset[20]_
+###### _Fig 1.2 - Sample of fearful images from the dataset[12]_
 
 
    ##### __Observable features of "Fear" include:__
 
-      1. Frontalis(forehead) tentioned[12]
-      2. Mentalis(midline above chin) stretched[12]
+      1. Frontalis(forehead) tentioned[13]
+      2. Mentalis(midline above chin) stretched[13]
       3. Eyebrows thrust upwards
       4. Eyes widened
       5. Mouth opened laterally or vertically
@@ -100,13 +100,13 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/a8f0f490-4d7b-4a9b-af32-dbe78c585755)
 
-###### _Fig 1.3 - Sample of happy images from the dataset[20]_
+###### _Fig 1.3 - Sample of happy images from the dataset[12]_
 
 
    ##### __Observable features of "Happy" include:__
 
-      1. Orbicularis oculi (outer cleft of the eye) contracted[12]
-      2. Zygomaticus major(midpoint of a line between nose and ear lobe) raised[12]
+      1. Orbicularis oculi (outer cleft of the eye) contracted[13]
+      2. Zygomaticus major(midpoint of a line between nose and ear lobe) raised[13]
       3. Eyebrows relaxed
       4. Eyes slightly closed
       5. Cheeks contracted (lifted)
@@ -118,13 +118,13 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
   ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f9650aae-7c32-4c42-ab59-5861c00dcc67)
 
-   ###### _Fig 1.4 - Sample of sad images from the dataset[20]_
+   ###### _Fig 1.4 - Sample of sad images from the dataset[12]_
 
 
    ##### __Observable features of "Sad" include:__
       
-      1. Corrugator(above medial aspect of left eyebrow) clenched[12]
-      2. Depressor Anguli Oris(below left corner of mouth) pronouned[12]
+      1. Corrugator(above medial aspect of left eyebrow) clenched[13]
+      2. Depressor Anguli Oris(below left corner of mouth) pronouned[13]
       3. Eyebrows tense
       4. Eyes slightly closed
       5. Angle of mouth drawn downward (frown)
@@ -133,10 +133,10 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/c9918534-054b-4e4b-a5a3-3f94cd7a0b3c)
 
-###### _Fig 1.5 - Sample of surprise images from the dataset[20]_
+###### _Fig 1.5 - Sample of surprise images from the dataset[12]_
 
 
-   ##### __Observable features for "Surprise" include:[20]__
+   ##### __Observable features for "Surprise" include:__
 
       1. Eyebrows raised
       2. Eyes widened
@@ -147,7 +147,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/71b25098-5843-43e4-a72c-f94d0f985970)
 
-###### _Fig 1.6 - Sample of neutral images from the dataset[20]_
+###### _Fig 1.6 - Sample of neutral images from the dataset[12]_
 
 
    ##### __Observable features for "Neutral" include:__
@@ -161,19 +161,19 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ### Prototype
 
-__The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_CNN model[13] which uses CNN and deep learning in training the model.__
+__The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_CNN model[14] which uses CNN and deep learning in training the model.__
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/668baf35-312d-4d42-86c5-462326663394)
 
-###### _Fig 2.0 - Diagrammatic representation of a CNN[21]_
+###### _Fig 2.0 - Diagrammatic representation of a CNN[15]_
 
 Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
-The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[14]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[15]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[15]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
+The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[16]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[17]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[17]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
-###### _Fig 2.2 - Shows the interest in Tensorflow over the last five years according to Google Trends[22]_
+###### _Fig 2.2 - Shows the interest in Tensorflow over the last five years according to Google Trends[18]_
 
 Videos are nothing but a series of static images. In emotion detection of real-time videos, these static images are analyzed and the emotion predicted is displayed on the module. Cascade Classifier was used to identify faces and classify them into their emotion classes.
 
@@ -250,10 +250,10 @@ There are 1,774 images in the happy training class, of that 448 times the model 
 
 ###### _Fig 2.5 - Classification report of model_
 
-The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[16], lip and cheek movements[17], and eyebrow postitioning[17]. 
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[19], lip and cheek movements[20], and eyebrow postitioning[20]. 
 
 #### Analysis of f-1 score
-f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. The closer it is to 1, the better the model. 
+f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. The closer it is to 1, the better the model[21]. 
 
 In the fear class, precision and recall differ by 0.02, this is because of the low sample rate. In all other states, precision, and recall are close to each other. f-1 score is highest in the happy category.
 
@@ -331,7 +331,7 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## IX. Conclusion
 
-The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [18]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[19]. 
+The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [22]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[23]. 
 
 The idea of detecting emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in the diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
 
@@ -405,24 +405,26 @@ FER-2013 Dataset from Kaggle[20]
 
 [11] Gkikas, Stefanos, and Manolis Tsiknakis. "Automatic assessment of pain based on deep learning methods: A systematic review." Computer methods and programs in biomedicine 231 (2023): 107365.
 
-[12] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
+[12] “FER-2013 | Kaggle.” Kaggle. https://www.kaggle.com/datasets/msambare/fer2013 (accessed: Jul. 31, 2023).
 
-[13] “datamagic2020/Emotion_detection_with_CNN - GitHub.” GitHub. https://github.com/datamagic2020/Emotion_detection_with_CNN (accessed: Jul. 31, 2023).
+[13] Root, A A, and J A Stephens. “Organization of the central control of muscles of facial expression in man.” The Journal of physiology vol. 549,Pt 1 (2003): 289-98. doi:10.1113/jphysiol.2002.035691
 
-[14] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
+[14] “datamagic2020/Emotion_detection_with_CNN - GitHub.” GitHub. https://github.com/datamagic2020/Emotion_detection_with_CNN (accessed: Jul. 31, 2023).
 
-[15] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
+[15] “anishjohnson/Face-Emotion-Recognition: This project is a .. - GitHub.” Medium. https://github.com/anishjohnson/Face-Emotion-Recognition (accessed: Aug. 01, 2023).
 
-[16] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
+[16] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
 
-[17] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
+[117] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
 
-[18] Heiderich, Tatiany M., et al. "Face-based automatic pain assessment: challenges and perspectives in neonatal intensive care units." Jornal de Pediatria (2023).
+[18] “Google Trends.” Google Trends. https://trends.google.com/trends/ (accessed: Aug. 01, 2023).
 
-[19] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
+[19] J. Z. Lim, J. Mountstephens, and J. Teo, “Emotion Recognition Using Eye-Tracking: Taxonomy, Review and Current Challenges,” Sensors, vol. 20, no. 8, p. 2384, Apr. 2020, doi: 10.3390/s20082384.
 
-[20] “FER-2013 | Kaggle.” Kaggle. https://www.kaggle.com/datasets/msambare/fer2013 (accessed: Jul. 31, 2023).
+[20] Kohler, Christian G., et al. "Differences in facial expressions of four universal emotions." Psychiatry research 128.3 (2004): 235-244.
 
-[21] “anishjohnson/Face-Emotion-Recognition: This project is a .. - GitHub.” Medium. https://github.com/anishjohnson/Face-Emotion-Recognition (accessed: Aug. 01, 2023).
+[21] 
 
-[22] “Google Trends.” Google Trends. https://trends.google.com/trends/ (accessed: Aug. 01, 2023).
+[22] Heiderich, Tatiany M., et al. "Face-based automatic pain assessment: challenges and perspectives in neonatal intensive care units." Jornal de Pediatria (2023).
+
+[23] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
