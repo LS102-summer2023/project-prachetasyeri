@@ -11,7 +11,7 @@ Currently, assessment of pain occurs through self-report, external observations,
 
 
 ## II. Motivation
-During the COVID-19 pandemic, my grandfather was diagnosed with Alzheimer's and Leukemia. As he was in a weakened state of health, coronavirus exposure would have been undesirable to his health. Online consultations with his doctors would have been desirable. Although possible, online sessions would not be effective compared to face-to-face interactions. I wondered ways in which online consultation between doctors and patients could be improved to help in the diagnosis of diseases and be more effective. If online consultations were more reliable, here are a few ways the patients would benefit:
+During the COVID-19 pandemic, it was evident that for patients with lower immunity, in-person consultations would be risky due to coronavirus exposure. These patients would benefit greatly from online consultations. Although possible, online sessions would not be effective compared to face-to-face consultations because doctors could not get body language cues from the patient. Would the ability to identify cues from patients benefit the diagnosis of disease in virtual consultations? If online consultations were more reliable, here are a few ways the patients would benefit:
 
   ◦ Patients may have a primary doctor whom they see regularly and such a doctor would be familiar with their medical history. In these cases, the patient would be able to consult their preferred doctor over the Internet and have a just as effective consultation.
 
@@ -57,7 +57,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f2fa6e3d-1953-451c-8b1c-ab1d7ff7cabe)
 
-###### _Fig 1.0 - Sample of angry images from the dataset_
+###### _Fig 1.0 - Sample of angry images from the dataset[20]_
 
 
    ##### __Observable features of "Anger" include:__ 
@@ -71,7 +71,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/516ecbdd-df2c-4ab7-85a3-16b6c893f166)
 
-###### _Fig 1.1 - Sample of disgusted images from the dataset_
+###### _Fig 1.1 - Sample of disgusted images from the dataset[20]_
 
 
    ##### __Observable features of "Disgust" include:__
@@ -85,7 +85,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/978e6d4a-6a6d-43a9-9f0b-fb8716fc12e1)
 
-###### _Fig 1.2 - Sample of fearful images from the dataset_
+###### _Fig 1.2 - Sample of fearful images from the dataset[20]_
 
 
    ##### __Observable features of "Fear" include:__
@@ -100,7 +100,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/a8f0f490-4d7b-4a9b-af32-dbe78c585755)
 
-###### _Fig 1.3 - Sample of happy images from the dataset_
+###### _Fig 1.3 - Sample of happy images from the dataset[20]_
 
 
    ##### __Observable features of "Happy" include:__
@@ -118,7 +118,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
   ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f9650aae-7c32-4c42-ab59-5861c00dcc67)
 
-   ###### _Fig 1.4 - Sample of sad images from the dataset_
+   ###### _Fig 1.4 - Sample of sad images from the dataset[20]_
 
 
    ##### __Observable features of "Sad" include:__
@@ -133,10 +133,10 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/c9918534-054b-4e4b-a5a3-3f94cd7a0b3c)
 
-###### _Fig 1.5 - Sample of surprise images from the dataset_
+###### _Fig 1.5 - Sample of surprise images from the dataset[20]_
 
 
-   ##### __Observable features for "Surprise" include:__
+   ##### __Observable features for "Surprise" include:[20]__
 
       1. Eyebrows raised
       2. Eyes widened
@@ -147,7 +147,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/71b25098-5843-43e4-a72c-f94d0f985970)
 
-###### _Fig 1.6 - Sample of neutral images from the dataset_
+###### _Fig 1.6 - Sample of neutral images from the dataset[20]_
 
 
    ##### __Observable features for "Neutral" include:__
@@ -165,7 +165,7 @@ __The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_C
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/668baf35-312d-4d42-86c5-462326663394)
 
-###### _Fig 2.0 - Diagrammatic representation of a CNN_
+###### _Fig 2.0 - Diagrammatic representation of a CNN[21]_
 
 Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
@@ -173,7 +173,7 @@ The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/5fbf1acc-de0e-4446-9905-03e41e4795b9)
 
-###### _Fig 2.2 - Shows the interest in Tensorflow over the last five years according to Google Trends_
+###### _Fig 2.2 - Shows the interest in Tensorflow over the last five years according to Google Trends[22]_
 
 Videos are nothing but a series of static images. In emotion detection of real-time videos, these static images are analyzed and the emotion predicted is displayed on the module. Cascade Classifier was used to identify faces and classify them into their emotion classes.
 
@@ -217,19 +217,48 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
 ###### _Fig 2.3 - Confusion Matrix of model_
 
+◦ The model correctly classified	116	images correctly for the emotion state	anger (accuracy: 12.11%)
 
-![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/cbea39a0-6753-498d-889b-bca444a7dfd2)
+◦ The model correctly classified	1	image correctly for the emotion state	disgust (accuracy: 0.90%) as shown with white color
+
+◦ The model correctly classified	121	images correctly for the emotion state	fear (accuracy: 11.82%)
+
+◦ The model correctly classified	448	images correctly for the emotion state	happy (accuracy: 25.25%) as shown with the darkest blue color
+
+◦ The model correctly classified	253	images correctly for the emotion state	sad (accuracy: 20.52%)
+
+◦ The model correctly classified	212	images correctly for the emotion state	surprise (accuracy: 17%)
+
+◦ The model correctly classified	81	images correctly for the emotion state	neutral (accuracy: 9.75%)
+
+
+
+#### Model Analysis for edge cases:
+
+In 233 instances, the model predicted that the subjects were happy when they were actually Angry. On the other hand, in 223 instances, the model predicted that the subjects were angry when they were actually happy. More training data needs to be included to classify anger versus happy states better.
+
+In 81 instances, the model correctly predicted that the subjects were neutral compared to the ground truth. This combination is extremely low and more classifiers need to be tuned to identify neutral state.
+
+There are 1,774 images in the happy training class, of that 448 times the model correctly predicted the emotion with an accuracy of 25.25%.
+
+
+![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/86d002be-3078-41d6-ba97-a002fc3a6d5a)
+
 
 ###### _Fig 2.4 - Analysis of confusion matrix table_
-
-Based on the analysis of the confusion matrix the model is accurate 25.25% of the time in predicting happy emotion and 20.52% of the time it accurately predicts a neutral face. The model is the least accurate in predicting disgusted and surprised faces. To improve model accuracy, the model should be trained on more images for each class. 
 
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/30be22b3-9657-4c58-915d-27ff32041b36)
 
 ###### _Fig 2.5 - Classification report of model_
 
-The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[16], lip and cheek movements[17], and eyebrow postitioning[17].
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[16], lip and cheek movements[17], and eyebrow postitioning[17]. 
+
+#### Analysis of f-1 score
+f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. THe closer it is to 1, the better the model. 
+
+In the fear class, precision and recall differ by 0.02, this is because of low sample rate. ALl other states, precision and recall are close to each other. f-1 score is highest in the happy category.
+
 
 ## VI. Experimental Results
 
@@ -395,3 +424,7 @@ FER-2013 Dataset from Kaggle[20]
 [19] McClelland, Laura E., and James A. McCubbin. "Social influence and pain response in women and men." Journal of Behavioral Medicine 31 (2008): 413-420.
 
 [20] “FER-2013 | Kaggle.” Kaggle. https://www.kaggle.com/datasets/msambare/fer2013 (accessed: Jul. 31, 2023).
+
+[21] “anishjohnson/Face-Emotion-Recognition: This project is a .. - GitHub.” Medium. https://github.com/anishjohnson/Face-Emotion-Recognition (accessed: Aug. 01, 2023).
+
+[22] “Google Trends.” Google Trends. https://trends.google.com/trends/ (accessed: Aug. 01, 2023).
