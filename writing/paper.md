@@ -7,7 +7,7 @@ Prachetas Yeri
 ---
 ## I. Abstract
 
-Currently, assessment of pain occurs through self-report, external observations, or physiological tests[1]. Not all patients can express their experience of pain, such as patients in a coma or neonates[2]. Patients may express several emotions that are unidentified by humans that can be detected by nonhuman observers, potentially aiding in the diagnosis of disease [3]. There are six types of human emotions shown to be universally recognizable across different cultures [4]: anger, disgust, fear, happiness, sadness, and surprise. In recent years, the field of emotion detection has been prevalent. Using Machine Learning(ML) algorithms, emotions can be detected from real-time videos. The research analyzes video feed(unimodal) that uses Convolutional Neural Networks(CNN)- a deep learning technique to detect emotions in patients during a virtual consultation. This strives to help medical practitioners understand their patients' emotions which could help in their diagnosis of disease. Additionally, Python libraries such as Keras, and TensorFlow in the building of the prototype and used Cascade Classifier. The present study aims to see if Computer Vision(CV) can be used to identify emotions and pain in virtual consultations between medical practitioners and patients is feasible and can improve medical care.
+Currently, assessment of pain occurs through self-report, external observations, or physiological tests[1]. Not all patients can express their experience of pain, such as patients in a coma or neonates[2]. Patients may express several emotions that are unidentified by humans that can be detected by nonhuman observers, potentially aiding in the diagnosis of disease [3]. There are six types of human emotions shown to be universally recognizable across different cultures [4]: anger, disgust, fear, happiness, sadness, and surprise. In recent years, the field of emotion detection has been prevalent. Using Machine Learning(ML) algorithms, emotions can be detected from real-time videos. The research analyzes video feed(unimodal) using Cascade Classifier and Convolutional Neural Networks(CNN)-  deep learning techniques to detect emotions in patients during a virtual consultation. Additionally, Python libraries such as Keras, and TensorFlow were used to build the prototype. This strives to help medical practitioners understand their patients' emotions which could help in their diagnosis of disease.  The present study aims to see if Computer Vision(CV) can be used to identify emotions and pain in virtual consultations between medical practitioners and patients, is feasible and can improve medical care.
 
 
 ## II. Motivation
@@ -167,7 +167,7 @@ __The model this paper analyzes and uses Sunny Kusawa's Emotion_detection_with_C
 
 ###### _Fig 2.0 - Diagrammatic representation of a CNN[15]_
 
-Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be feasible for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
+Emotion detection using computer vision has attracted significant attention from programmers over the past few years. Many have used different models or methods to create an emotion detection program that analyses images and outputs the emotion predicted by the model. Initially, a code from GitHub was found and tested. The model was for detecting emotion in images which would not be appropriate for this application. In a virtual consultation between medical practitioners and patients, the model should be able to detect emotion using real-time video which would allow for a live feed to be available for the doctor.
 
 The prototype uses pythons Keras, Tensorflow, and Cascade Classifier to predict emotions in real-time videos. Keras is an open-source library that provides a Python interface for artificial neural networks(ANN) and DL. ANN is inspired by the structure of neurons in the human brain[16]. It was developed to make deep learning models as quickly and as easily as possible. Keras runs on Python 2.7 or 3.6 and TensorFlow[17]. Tensorflow is another open-source library for fast numerical computing. It was created and is maintained by Google. It can run on single CPU systems, GPUs, and mobiles[17]. Tensorflow is used to build artificial intelligence(AI) and Machine learning(ML) algorithms. 
 
@@ -250,7 +250,7 @@ There are 1,774 images in the happy training class, of that 448 times the model 
 
 ###### _Fig 2.5 - Classification report of model_
 
-The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[19], lip and cheek movements[20], and eyebrow postitioning[20]. 
+The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model such as combining sounds with images, or more specific uni-modal models that captures specific scenarios such as reading emotion through eyes alone[19], lip and cheek movements[20], and eyebrow postitioning[20]. 
 
 #### Analysis of f-1 score
 f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. The closer it is to 1, the better the model[21]. 
@@ -271,7 +271,7 @@ Optimal lighting conditions were used and there were no additional accessories t
 
 #### Sunglasses
 
-Optimal lighting conditions were used and large, dark sunglasses were worn. The model reliably detected happy, sad, and neutral emotions while it was not reliable in the detection of other emotions. The box would sometimes be drawn twice often detecting two faces when there was only one but would flicker hence screenshots could not be taken.
+Optimal lighting conditions were used and large, dark sunglasses were worn. The model reliably detected happy, sad, and neutral emotions while it was not reliable in the detection of other emotions. The box would sometimes be drawn twice often detecting two faces when there was only one. It would rapidly flicker making it difficult to take screenshots.
 
 ![sunglass](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/e0bbd0ce-cac9-45ad-b085-307183008b5a)
 
@@ -331,7 +331,7 @@ Optimal lighting conditions were used but hair was near the eyebrows. The model 
 
 ## IX. Conclusion
 
-The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [22]. For example, one person may express more pain whereas another may not express as much pain on their face. Or gender and culturally different emotions may be expressed[23]. 
+The prototype evaluated in this paper used CNN and Cascade Classifier to detect the emotions of subjects in real-time videos. The model accuracy is only 17% but with more research in the field, better datasets, and multi-modality, it is believed that the model accuracy can drastically improve. The model is sensitive to lighting conditions and only detects the face if all key features(eyebrows, nose, lips, and chin) are being identified. Creating a model for emotional pain detection is more difficult due to various emotions and the lack of widely accepted pain scales [22]. One person may express more pain on their face than others, or different emotions may be expressed due to gender or cultural variability[23]. 
 
 The idea of detecting emotions and pain in patients is feasible and can be implemented into virtual consultations and aid in the diagnosis of diseases. However, the model needs to include detection of the degree of pain in patients to aid doctors effectively. The model would have to be trained on synthetic data keeping in mind all previously mentioned factors. 
 
@@ -349,16 +349,16 @@ The idea of detecting emotions and pain in patients is feasible and can be imple
 
   ◦ Extend the analysis to near real-time video sessions (Facetime, Google Meet)
 
-  ◦ Can this tie to the training of professionals using emotion detection in links with augmented reality?
+  ◦ Can this tie to the training of medical professionals using computer vision with augmented reality?
 
-  ◦ Include audio in the future - transition into audio to add to the algorithm
+  ◦ Include audio based emotion detection model in addition to current prototype(leaning towards mulit-modal models)
 
 
 ## XI. Ethical Implications and Recommendations
 
   ◦ Patient has not agreed to be on camera or recorded: Signed consent forms need to be given before the consultation.
 
-  ◦ Can doctors rely on the model too much? Doctors may blame the model in an event of an inaccurate diagnosis. The model simply aids the doctor but cannot be fully relied on. 
+  ◦ Can doctors rely on the model too much? Doctors may blame the model in an event of an inaccurate diagnosis. The prototype simply aids the doctor but cannot be fully relied on. 
 
   ◦ Data privacy issues: Data should be encrypted to avoid being seen by others
 
