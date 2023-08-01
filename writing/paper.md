@@ -377,9 +377,9 @@ Naveen Yeri and Meenakshi Yeri- Gave tips along the way and provoked my imaginat
 
 Thejas Bhat- Assisted in running the prototype. He helped immensely with implementing the prototype and any code-related work.
 
-Emotion_Detection_with_CNN[13] by Sunny Kusawa
+Emotion_Detection_with_CNN[14] by Sunny Kusawa
 
-FER-2013 Dataset from Kaggle[20]
+FER-2013 Dataset from Kaggle[12]
 
 ## References
 
@@ -411,11 +411,11 @@ FER-2013 Dataset from Kaggle[20]
 
 [14] “datamagic2020/Emotion_detection_with_CNN - GitHub.” GitHub. https://github.com/datamagic2020/Emotion_detection_with_CNN (accessed: Jul. 31, 2023).
 
-[15] “anishjohnson/Face-Emotion-Recognition: This project is a .. - GitHub.” Medium. https://github.com/anishjohnson/Face-Emotion-Recognition (accessed: Aug. 01, 2023).
+[15] “How Are You Feeling? — Answered with A Real-Time Emotion ..” travistang.com. https://www.travistang.com/blog/how-are-you-feeling-answered-with-a-real-time-emotion-detector/ (accessed: Aug. 01, 2023).
 
 [16] Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.
 
-[117] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
+[17] Brownlee, Jason. "Deep learning with Python: develop deep learning models on Theano and TensorFlow using Keras." Machine Learning Mastery, 2016.
 
 [18] “Google Trends.” Google Trends. https://trends.google.com/trends/ (accessed: Aug. 01, 2023).
 
