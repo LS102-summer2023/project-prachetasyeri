@@ -1,6 +1,6 @@
 # LS 102 - Computer Science Research Paper
 
-## Emotion Detection in Virtual Medical Consultations: A Computer Vision based Approach to analyze Pain and increase Patient Care Efficsey
+## Emotion Detection in Virtual Medical Consultations: A Computer Vision-based Approach to Analyze Pain and Increase Patient Care Efficsey
 
 Prachetas Yeri
 
@@ -217,30 +217,28 @@ Videos are nothing but a series of static images. In emotion detection of real-t
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/640c2eeb-3475-45a9-829c-b09a21b89364)
 ###### _Fig 2.3 - Confusion Matrix of model_
 
-◦ The model correctly classified	116	images correctly for the emotion state	anger (accuracy: 12.11%)
+◦  The model correctly classified 116 images for the emotion state anger (accuracy: 12.11%)
 
-◦ The model correctly classified	1	image correctly for the emotion state	disgust (accuracy: 0.90%) as shown with white color
+◦ The model correctly classified 1 image for the emotion state disgust (accuracy: 0.90%) as shown with white color
 
-◦ The model correctly classified	121	images correctly for the emotion state	fear (accuracy: 11.82%)
+◦ The model correctly classified 121 images for the emotion state fear (accuracy: 11.82%)
 
-◦ The model correctly classified	448	images correctly for the emotion state	happy (accuracy: 25.25%) as shown with the darkest blue color
+◦ The model correctly classified 448 images for the emotion state happy (accuracy: 25.25%) as shown with the darkest blue color
 
-◦ The model correctly classified	253	images correctly for the emotion state	sad (accuracy: 20.52%)
+◦ The model correctly classified 253 images for the emotion state sad (accuracy: 20.52%)
 
-◦ The model correctly classified	212	images correctly for the emotion state	surprise (accuracy: 17%)
+◦ The model correctly classified 212 images for the emotion state surprise (accuracy: 17%)
 
-◦ The model correctly classified	81	images correctly for the emotion state	neutral (accuracy: 9.75%)
-
+◦ The model correctly classified 81 images for the emotion state neutral (accuracy: 9.75%)
 
 
 #### Model Analysis for edge cases:
 
 In 233 instances, the model predicted that the subjects were happy when they were actually Angry. On the other hand, in 223 instances, the model predicted that the subjects were angry when they were actually happy. More training data needs to be included to classify anger versus happy states better.
 
-In 81 instances, the model correctly predicted that the subjects were neutral compared to the ground truth. This combination is extremely low and more classifiers need to be tuned to identify neutral state.
+In 81 instances, the model correctly predicted that the subjects were neutral compared to the ground truth. This combination is extremely low and more classifiers need to be tuned to identify a neutral state.
 
 There are 1,774 images in the happy training class, of that 448 times the model correctly predicted the emotion with an accuracy of 25.25%.
-
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/86d002be-3078-41d6-ba97-a002fc3a6d5a)
 
@@ -255,9 +253,9 @@ There are 1,774 images in the happy training class, of that 448 times the model 
 The accuracy of the overall model is seen to be 17%. Although its accuracy is low, with better datasets the accuracy should improve. With a multi-modal model which captures specific scenarios such as reading emotion through eyes alone[16], lip and cheek movements[17], and eyebrow postitioning[17]. 
 
 #### Analysis of f-1 score
-f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. THe closer it is to 1, the better the model. 
+f-1 score takes both precision and recall into account, which also means it accounts for both false positives(FP) and false negatives(FN) The higher the precision and recall, the higher the f1-score. f1 score ranges between 0 and 1. The closer it is to 1, the better the model. 
 
-In the fear class, precision and recall differ by 0.02, this is because of low sample rate. ALl other states, precision and recall are close to each other. f-1 score is highest in the happy category.
+In the fear class, precision and recall differ by 0.02, this is because of the low sample rate. In all other states, precision, and recall are close to each other. f-1 score is highest in the happy category.
 
 
 ## VI. Experimental Results
