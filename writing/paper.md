@@ -57,6 +57,7 @@ The dataset used for the prototype used in this paper is "fer2013" downloaded fr
 
 ![image](https://github.com/LS102-summer2023/project-prachetasyeri/assets/136471736/f2fa6e3d-1953-451c-8b1c-ab1d7ff7cabe)
 
+
 ###### _Fig 1.0 - Sample of angry images from the dataset[12]_
 
 
